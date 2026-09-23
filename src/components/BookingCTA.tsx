@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { MessageCircle, CalendarCheck, Shield, Heart } from "lucide-react";
 import { useLanguage } from "@/context/LanguageContext";
 import { t, waLink } from "@/lib/utils";
@@ -58,8 +59,19 @@ export default function BookingCTA() {
           {/* Specular Radial Overlay for Rich Saturation */}
           <div
             aria-hidden="true"
-            className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/15 via-transparent to-white/10"
+            className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/25 via-transparent to-white/10"
           />
+
+          {/* Photographic Family Reconnection Texture */}
+          <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none select-none">
+            <Image
+              src="/images/family-bonding-bg.jpg"
+              alt="Heartfelt family bonding and peace of mind"
+              fill
+              sizes="(max-width: 1200px) 100vw, 1200px"
+              className="object-cover object-center opacity-20 mix-blend-luminosity"
+            />
+          </div>
 
           {/* Content */}
           <div className="relative z-10 mx-auto max-w-2xl">
