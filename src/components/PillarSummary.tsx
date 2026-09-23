@@ -15,7 +15,7 @@ export default function PillarSummary() {
   const pillars = content.home.pillars;
 
   return (
-    <section className="relative overflow-hidden my-8 sm:my-14 rounded-[2.5rem] sm:rounded-[3.5rem] py-18 sm:py-24 shadow-2xl">
+    <section className="relative overflow-hidden w-full py-12 sm:py-16 lg:py-20 rounded-[2.25rem] sm:rounded-[3rem] lg:rounded-none">
       {/* ========================================================================= */}
       {/* Photographic Therapy Consultation Sanctuary Backdrop with Visible Room & Moving Colors */}
       <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none select-none">

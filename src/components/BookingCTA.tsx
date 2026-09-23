@@ -20,11 +20,11 @@ export default function BookingCTA() {
   );
 
   return (
-    <section className="relative overflow-hidden py-16 sm:py-24">
+    <section className="relative overflow-hidden py-8 sm:py-14 lg:py-16">
       <Container>
         {/* Living Color Aurora Card with continuous moving color animation */}
         <div
-          className="relative overflow-hidden rounded-[2.5rem] sm:rounded-[3rem] border border-white/20 px-6 py-16 text-center text-white shadow-[0_25px_60px_-15px_rgba(225,29,72,0.35),0_15px_35px_-10px_rgba(13,148,136,0.25)] sm:px-12 sm:py-20"
+          className="relative overflow-hidden rounded-[2rem] sm:rounded-[3rem] border border-white/20 px-5 py-12 text-center text-white shadow-[0_25px_60px_-15px_rgba(225,29,72,0.35),0_15px_35px_-10px_rgba(13,148,136,0.25)] sm:px-12 sm:py-18"
         >
           {/* Photographic Family Reconnection Backdrop with Living Colors */}
           <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none select-none">

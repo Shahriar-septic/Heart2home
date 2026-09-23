@@ -22,7 +22,7 @@ export default function Hero() {
   );
 
   return (
-    <div className="sticky top-0 z-10 min-h-[92vh] sm:min-h-screen w-full flex flex-col justify-between overflow-visible pb-10 sm:pb-16">
+    <div className="relative lg:sticky lg:top-0 z-10 min-h-[85vh] lg:min-h-screen w-full flex flex-col justify-between overflow-visible pb-8 sm:pb-12 lg:pb-16">
       {/* ========================================================================= */}
       {/* 1. Curved Canopy Hero with Contextual Photographic Family Background     */}
       {/* ========================================================================= */}

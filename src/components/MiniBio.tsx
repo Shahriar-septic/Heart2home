@@ -13,7 +13,7 @@ export default function MiniBio() {
   const bio = content.home.bio;
 
   return (
-    <section className="py-16 sm:py-24">
+    <section className="py-8 sm:py-12 lg:py-14">
       <Container>
         <div className="relative overflow-hidden rounded-3xl border-2 border-rose-100/80 bg-white p-8 shadow-xl sm:p-12">
           {/* Subtle warm rose/teal aura corner */}

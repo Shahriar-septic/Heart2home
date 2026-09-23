@@ -12,7 +12,7 @@ export default function Testimonials() {
   const testimonials = content.home.testimonials;
 
   return (
-    <section className="relative py-16 sm:py-24">
+    <section className="relative pt-4 pb-12 sm:pt-6 sm:pb-16 lg:py-14">
       {/* Soft background ambient gradient */}
       <div
         aria-hidden="true"

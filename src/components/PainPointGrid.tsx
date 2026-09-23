@@ -12,7 +12,7 @@ export default function PainPointGrid() {
   const pain = content.home.painPoints;
 
   return (
-    <section className="relative border-t border-border/70 bg-surface/50 py-16 sm:py-24">
+    <section className="relative bg-transparent py-6 sm:py-10 lg:py-12">
       {/* Subtle background ambient touch */}
       <div
         aria-hidden="true"
@@ -25,7 +25,7 @@ export default function PainPointGrid() {
           description={t(pain.subheading, lang)}
         />
 
-        <div className="mt-12 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-8 sm:mt-12 grid grid-cols-1 gap-4 sm:gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {pain.items.map((item, i) => {
             const Icon = getIcon(item.icon);
             return (

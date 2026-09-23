@@ -12,7 +12,7 @@ export default function QuizTeaser() {
   const teaser = content.home.quizTeaser;
 
   return (
-    <section className="relative border-t border-border/70 bg-gradient-to-b from-sage-tint/40 via-surface-warm to-canvas py-16 sm:py-24">
+    <section className="relative bg-gradient-to-b from-sage-tint/40 via-surface-warm to-canvas py-8 sm:py-14 lg:py-16">
       <Container>
         <div className="grid grid-cols-1 items-start gap-12 lg:grid-cols-2 lg:gap-16">
           <div className="lg:sticky lg:top-28">
