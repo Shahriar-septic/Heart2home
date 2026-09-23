@@ -132,7 +132,8 @@ export default function TiltPortrait({
         {/* On mobile: relative in-flow positioning with -mt-6 so it naturally expands the hero without clipping */}
         {/* On desktop (lg): absolute positioned to the bottom-left */}
         <div
-          className="relative -mt-6 w-[92%] max-w-[340px] z-30 rounded-2xl border-2 border-rose-200/95 bg-white p-4 shadow-xl ring-1 ring-slate-900/5 sm:p-5 lg:absolute lg:-bottom-8 lg:-left-12 lg:mt-0 lg:w-[350px] lg:shadow-[0_20px_45px_rgba(225,29,72,0.16),0_4px_16px_rgba(15,23,42,0.08)]"
+          className="relative -mt-6 w-[92%] max-w-[340px] z-30 rounded-2xl border-2 border-rose-200/95 bg-white p-4 shadow-2xl ring-1 ring-slate-900/10 sm:p-5 lg:absolute lg:-bottom-8 lg:-left-12 lg:mt-0 lg:w-[350px] lg:shadow-[0_20px_45px_rgba(225,29,72,0.16),0_4px_16px_rgba(15,23,42,0.08)] !text-[#0F172A]"
+          style={{ color: "#0F172A" }}
         >
           <div className="mb-3 inline-flex items-center gap-1.5 rounded-full bg-rose-50 border border-rose-200 px-3 py-1 text-xs font-bold uppercase tracking-wider text-rose-700">
             <ShieldCheck size={15} className="text-rose-600 shrink-0" />
@@ -143,10 +144,13 @@ export default function TiltPortrait({
             {credentialCards.map((line, i) => (
               <li
                 key={i}
-                className="flex items-start gap-2.5 text-xs sm:text-[13px] font-semibold leading-snug text-slate-900"
+                className="flex items-start gap-2.5 text-xs sm:text-[13px] font-semibold leading-snug !text-[#0F172A]"
+                style={{ color: "#0F172A" }}
               >
                 <span className="mt-1 flex h-2 w-2 shrink-0 rounded-full bg-rose-500 shadow-sm" />
-                <span className="text-slate-900">{line}</span>
+                <span className="!text-[#0F172A] font-semibold" style={{ color: "#0F172A" }}>
+                  {line}
+                </span>
               </li>
             ))}
           </ul>

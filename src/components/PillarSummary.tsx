@@ -25,33 +25,39 @@ export default function PillarSummary() {
           alt="Peaceful and comforting psychotherapy consultation room"
           fill
           sizes="100vw"
-          className="object-cover object-center opacity-30"
+          className="object-cover object-center opacity-25 mix-blend-luminosity filter contrast-125 brightness-75"
         />
-        {/* Deep Slate & Teal Gradient Mask for Perfect Glass Card Contrast */}
-        <div className="absolute inset-0 bg-gradient-to-b from-slate-950/95 via-teal-950/90 to-slate-950/96" />
-        
+        {/* Deep Plum & Emerald Gradient Mask matching Reference Picture 2 */}
+        <div
+          className="absolute inset-0"
+          style={{
+            background:
+              "linear-gradient(135deg, rgba(88, 28, 63, 0.95) 0%, rgba(46, 16, 53, 0.92) 35%, rgba(15, 35, 45, 0.90) 65%, rgba(13, 92, 82, 0.95) 100%)",
+          }}
+        />
+
         {/* Ambient Subtle Color Glows */}
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute right-10 top-1/4 h-80 w-80 rounded-full bg-teal-500/15 blur-[120px]"
+          className="pointer-events-none absolute right-10 top-1/4 h-80 w-80 rounded-full bg-teal-500/20 blur-[120px]"
         />
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute left-10 bottom-1/4 h-72 w-72 rounded-full bg-rose-500/15 blur-[120px]"
+          className="pointer-events-none absolute left-10 bottom-1/4 h-72 w-72 rounded-full bg-rose-500/20 blur-[120px]"
         />
       </div>
 
       <Container>
         {/* Reassurance pill */}
-        <div className="mb-3 inline-flex items-center gap-2 rounded-full border border-teal-400/30 bg-teal-500/15 px-3.5 py-1 text-xs font-bold text-teal-300 backdrop-blur-md">
-          <Sparkles size={13} className="text-teal-300" />
+        <div className="mb-3 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-3.5 py-1 text-xs font-bold text-rose-200 backdrop-blur-md">
+          <Sparkles size={13} className="text-rose-300" />
           <span>Heart2Home Care Pillars</span>
         </div>
 
         <SectionHeading
           heading={t(pillars.heading, lang)}
           description={t(pillars.subheading, lang)}
-          className="[&>h2]:text-white [&>h2]:font-extrabold [&>p]:text-slate-300"
+          className="[&>h2]:!text-white [&>h2]:font-extrabold [&>h2]:drop-shadow-md [&>p]:!text-slate-100 [&>p]:font-medium [&>p]:drop-shadow"
         />
 
         <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-3">

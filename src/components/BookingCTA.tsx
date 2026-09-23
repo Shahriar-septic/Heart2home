@@ -27,8 +27,8 @@ export default function BookingCTA() {
           className="relative overflow-hidden rounded-[2rem] border border-white/25 px-6 py-14 text-center text-white shadow-[0_25px_60px_-15px_rgba(225,29,72,0.35),0_15px_35px_-10px_rgba(13,148,136,0.25)] sm:px-12 sm:py-18 animate-aurora-mesh"
           style={{
             backgroundImage:
-              "linear-gradient(135deg, #BE123C 0%, #E11D48 20%, #9F1239 40%, #0F766E 65%, #0D9488 85%, #E11D48 100%)",
-            backgroundSize: "300% 300%",
+              "linear-gradient(135deg, #581C3F 0%, #701A75 20%, #4A1528 42%, #0A2E28 65%, #0D5C52 85%, #064E3B 100%)",
+            backgroundSize: "220% 220%",
           }}
         >
           {/* Fluid Moving Aurora Light Orbs */}
@@ -83,11 +83,11 @@ export default function BookingCTA() {
               </span>
             </div>
 
-            <h2 className="text-3xl font-extrabold leading-tight tracking-tight sm:text-4xl lg:text-5xl drop-shadow-sm">
+            <h2 className="text-3xl font-extrabold leading-tight tracking-tight sm:text-4xl lg:text-5xl !text-white drop-shadow-md" style={{ color: "#FFFFFF" }}>
               {t(cta.heading, lang)}
             </h2>
 
-            <p className="mx-auto mt-4 max-w-lg text-base leading-relaxed text-white/95 sm:text-lg drop-shadow-sm">
+            <p className="mx-auto mt-4 max-w-lg text-base leading-relaxed text-white/95 sm:text-lg drop-shadow">
               {t(cta.description, lang)}
             </p>
 

@@ -22,7 +22,7 @@
   }
 
   h1, h2, h3, h4 {
-    @apply font-display text-ink tracking-tight;
+    @apply font-display tracking-tight;
   }
 
   h1, h2 {
