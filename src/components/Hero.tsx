@@ -27,47 +27,53 @@ export default function Hero() {
       {/* 1. Curved Canopy Hero with Contextual Photographic Family Background     */}
       {/* ========================================================================= */}
       <section className="relative overflow-hidden rounded-b-[2.5rem] sm:rounded-b-[4.5rem] bg-[#1a0826] pt-8 pb-20 sm:pt-14 sm:pb-28 text-white shadow-2xl">
-        {/* Photographic Family Care Backdrop with Rich Tint Matching Reference Picture 2 */}
+        {/* Photographic Family Care Backdrop with Living Moving Tints & High Image Visibility */}
         <div className="absolute inset-0 -z-20 overflow-hidden pointer-events-none select-none">
+          {/* 1. Underlying High-Visibility Photograph (Mother & Child clearly seen) */}
           <Image
             src="/images/hero-family-bg.jpg"
             alt="Warm and reassuring family guidance atmosphere"
             fill
             priority
             sizes="100vw"
-            className="object-cover object-center scale-105 opacity-25 mix-blend-luminosity filter contrast-125 brightness-75"
+            className="object-cover object-[center_32%] scale-100 opacity-80 transition-transform duration-1000 ease-out"
           />
 
-          {/* Deep Saturated Dual-Tone Tint (Deep Berry/Plum into Deep Forest Emerald) */}
+          {/* 2. Fluid Moving Aurora Mesh Overlay (Plum into Emerald animation) */}
+          <div
+            className="absolute inset-0 opacity-60 animate-aurora-mesh mix-blend-color"
+            style={{
+              backgroundImage:
+                "linear-gradient(135deg, #701A75 0%, #831843 25%, #4C0519 45%, #0A3D36 70%, #0D5C52 88%, #064E3B 100%)",
+              backgroundSize: "220% 220%",
+            }}
+          />
+
+          {/* 3. Fluid Moving Floating Color Blobs (Living animated ambient light) */}
+          <div
+            aria-hidden="true"
+            className="pointer-events-none absolute -left-16 -top-20 h-[480px] w-[480px] rounded-full bg-rose-500/35 blur-[100px] animate-aurora-blob-1"
+          />
+          <div
+            aria-hidden="true"
+            className="pointer-events-none absolute -right-20 -bottom-24 h-[520px] w-[520px] rounded-full bg-teal-400/35 blur-[110px] animate-aurora-blob-2"
+          />
+          <div
+            aria-hidden="true"
+            className="pointer-events-none absolute left-1/3 top-1/4 h-[380px] w-[380px] rounded-full bg-purple-600/25 blur-[95px] animate-aurora-blob-3"
+          />
+
+          {/* 4. Left-to-Right Directional Readability Mask: Darker on text (left), soft & clear on photo (right) */}
           <div
             className="absolute inset-0"
             style={{
               background:
-                "linear-gradient(135deg, rgba(88, 28, 63, 0.95) 0%, rgba(46, 16, 53, 0.92) 35%, rgba(15, 35, 45, 0.90) 65%, rgba(13, 92, 82, 0.95) 100%)",
+                "linear-gradient(to right, rgba(16, 4, 22, 0.92) 0%, rgba(16, 4, 22, 0.78) 42%, rgba(16, 4, 22, 0.32) 70%, rgba(4, 30, 26, 0.45) 100%)",
             }}
           />
 
-          {/* Text Contrast Vignette to guarantee AAA legibility behind headline */}
-          <div
-            className="absolute inset-0"
-            style={{
-              background:
-                "radial-gradient(ellipse 95% 85% at 20% 40%, rgba(35, 8, 28, 0.85) 0%, rgba(6, 25, 25, 0.65) 60%, rgba(2, 10, 10, 0.90) 100%)",
-            }}
-          />
-
-          {/* Specular Edge Highlights */}
-          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/30" />
-
-          {/* Ambient Glowing Orbs */}
-          <div
-            aria-hidden="true"
-            className="pointer-events-none absolute -top-24 left-1/4 h-[550px] w-[550px] -translate-x-1/2 rounded-full bg-rose-500/25 blur-[120px]"
-          />
-          <div
-            aria-hidden="true"
-            className="pointer-events-none absolute bottom-0 right-0 h-[500px] w-[500px] rounded-full bg-teal-400/25 blur-[130px]"
-          />
+          {/* 5. Subtle Edge Vignette */}
+          <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-slate-950/40" />
         </div>
 
         <Container>

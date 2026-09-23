@@ -75,18 +75,34 @@ const jsonLd = {
   ],
 };
 
+import ScrollSlide from "@/components/ScrollSlide";
+
 export default function HomePage() {
   return (
     <>
       <JsonLd data={jsonLd} />
       <Hero />
-      <PainPointGrid />
-      <PillarSummary />
-      <QuizTeaser />
-      <TrustBadges />
-      <MiniBio />
-      <Testimonials />
-      <BookingCTA />
+      <ScrollSlide asCard>
+        <PainPointGrid />
+      </ScrollSlide>
+      <ScrollSlide>
+        <PillarSummary />
+      </ScrollSlide>
+      <ScrollSlide asCard>
+        <QuizTeaser />
+      </ScrollSlide>
+      <ScrollSlide>
+        <TrustBadges />
+      </ScrollSlide>
+      <ScrollSlide asCard>
+        <MiniBio />
+      </ScrollSlide>
+      <ScrollSlide asCard>
+        <Testimonials />
+      </ScrollSlide>
+      <ScrollSlide>
+        <BookingCTA />
+      </ScrollSlide>
     </>
   );
 }

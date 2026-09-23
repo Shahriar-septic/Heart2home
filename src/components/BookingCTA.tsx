@@ -62,14 +62,14 @@ export default function BookingCTA() {
             className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/25 via-transparent to-white/10"
           />
 
-          {/* Photographic Family Reconnection Texture */}
+          {/* Photographic Family Reconnection Texture - Clearly Visible */}
           <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none select-none">
             <Image
               src="/images/family-bonding-bg.jpg"
               alt="Heartfelt family bonding and peace of mind"
               fill
               sizes="(max-width: 1200px) 100vw, 1200px"
-              className="object-cover object-center opacity-20 mix-blend-luminosity"
+              className="object-cover object-center opacity-65 mix-blend-overlay"
             />
           </div>
 
