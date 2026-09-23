@@ -1,6 +1,7 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
+import { createPortal } from "react-dom";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { X, Facebook, Globe, ChevronRight, MessageCircle, Calendar, ShieldCheck } from "lucide-react";
@@ -26,6 +27,11 @@ export default function MobileDrawer({
   const pathname = usePathname();
   const panelRef = useRef<HTMLDivElement>(null);
   const triggerRef = useRef<Element | null>(null);
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   const whatsappHref = waLink(
     content.site.whatsapp,
@@ -87,31 +93,37 @@ export default function MobileDrawer({
   const beforeServices = servicesIndex >= 0 ? links.slice(0, servicesIndex + 1) : links;
   const afterServices = servicesIndex >= 0 ? links.slice(servicesIndex + 1) : [];
 
-  return (
+  if (!mounted) return null;
+
+  return createPortal(
     <AnimatePresence>
       {open && (
-        <>
+        <div className="fixed inset-0 z-[999] lg:hidden">
+          {/* Dimmed backdrop covering 100% of viewport */}
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 z-50 bg-slate-950/50 backdrop-blur-sm lg:hidden"
+            transition={{ duration: 0.2 }}
+            className="fixed inset-0 bg-slate-950/70 backdrop-blur-sm"
             onClick={onClose}
             aria-hidden="true"
           />
+
+          {/* Solid Opaque Drawer Panel (escapes any containing block, never see-through) */}
           <motion.div
             initial={{ x: "100%" }}
             animate={{ x: 0 }}
             exit={{ x: "100%" }}
-            transition={{ type: "tween", duration: 0.28, ease: [0.22, 1, 0.36, 1] }}
+            transition={{ type: "tween", duration: 0.26, ease: [0.22, 1, 0.36, 1] }}
             role="dialog"
             aria-modal="true"
             aria-label="Site navigation"
             ref={panelRef}
-            className="fixed right-0 top-0 z-50 flex h-full w-[88%] max-w-sm flex-col ios-glass-drawer p-5 sm:p-6 shadow-2xl lg:hidden"
+            className="fixed inset-y-0 right-0 z-10 flex h-[100dvh] w-[86%] max-w-sm flex-col bg-white p-5 shadow-2xl border-l border-slate-200"
           >
-            {/* Drawer Header: Logo on left, Close button on right */}
-            <div className="mb-4 flex items-center justify-between border-b border-white/60 pb-3">
+            {/* Drawer Header: Logo & Close button */}
+            <div className="mb-4 flex items-center justify-between border-b border-slate-100 pb-3">
               <Link href="/" onClick={onClose} className="flex items-center gap-1 font-display text-xl font-bold tracking-tight">
                 <span className="text-rose-600">Heart</span>
                 <span className="text-teal-600">2</span>
@@ -125,7 +137,7 @@ export default function MobileDrawer({
                 type="button"
                 onClick={onClose}
                 aria-label="Close menu"
-                className="flex h-10 w-10 items-center justify-center rounded-full border border-white/80 bg-white/80 text-slate-700 shadow-sm backdrop-blur-md active:scale-95 active:bg-white"
+                className="flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 bg-slate-100 text-slate-700 shadow-sm active:scale-95 active:bg-slate-200"
               >
                 <X size={18} />
               </button>
@@ -135,7 +147,7 @@ export default function MobileDrawer({
             <button
               type="button"
               onClick={toggleLang}
-              className="mb-3.5 flex min-h-[44px] items-center justify-center gap-2 rounded-2xl border border-rose-200/80 bg-rose-50/80 text-xs sm:text-sm font-bold text-rose-700 shadow-sm backdrop-blur-md transition active:scale-[0.98] hover:bg-rose-100"
+              className="mb-3.5 flex min-h-[44px] items-center justify-center gap-2 rounded-2xl border border-rose-200 bg-rose-50 text-xs sm:text-sm font-bold text-rose-700 shadow-sm transition active:scale-[0.98] hover:bg-rose-100"
             >
               <Globe size={15} />
               <span>{lang === "en" ? "বাংলায় দেখুন (Switch to Bangla)" : "Switch to English"}</span>
@@ -143,7 +155,7 @@ export default function MobileDrawer({
 
             {/* Navigation Links List */}
             <nav
-              className="flex flex-1 flex-col gap-1.5 overflow-y-auto overscroll-contain pr-1 py-1"
+              className="flex flex-1 flex-col gap-1.5 overflow-y-auto overscroll-contain min-h-0 pr-1 py-1"
               aria-label="Mobile"
             >
               {beforeServices.map((link) => {
@@ -155,8 +167,8 @@ export default function MobileDrawer({
                     onClick={onClose}
                     className={`flex min-h-[46px] items-center justify-between rounded-2xl px-4 text-sm sm:text-base font-bold transition active:scale-[0.99] ${
                       isActive
-                        ? "border border-rose-300 bg-rose-50/95 text-rose-700 shadow-sm"
-                        : "border border-white/60 bg-white/50 text-slate-800 shadow-sm backdrop-blur-md hover:bg-white/80 hover:text-rose-600"
+                        ? "border border-rose-300 bg-rose-50 text-rose-700 shadow-sm"
+                        : "border border-slate-200 bg-slate-50/80 text-slate-800 shadow-sm hover:bg-slate-100 hover:text-rose-600"
                     }`}
                   >
                     <span>{link.label}</span>
@@ -174,10 +186,10 @@ export default function MobileDrawer({
                       key={link.href}
                       href={link.href}
                       onClick={onClose}
-                      className={`flex min-h-[40px] items-center gap-2 rounded-xl pl-3 pr-3 text-xs sm:text-sm font-semibold transition active:bg-white/90 ${
+                      className={`flex min-h-[40px] items-center gap-2 rounded-xl pl-3 pr-3 text-xs sm:text-sm font-semibold transition active:bg-slate-200 ${
                         isActive
-                          ? "border-l-3 border-rose-600 bg-rose-50/90 text-rose-700 font-bold shadow-sm"
-                          : "border-l-2 border-rose-400/70 bg-white/40 text-slate-700 backdrop-blur-sm hover:text-rose-600"
+                          ? "border-l-3 border-rose-600 bg-rose-50 text-rose-700 font-bold shadow-sm"
+                          : "border-l-2 border-rose-400/80 bg-slate-50 text-slate-700 hover:text-rose-600"
                       }`}
                     >
                       <ChevronRight size={13} className="shrink-0 text-rose-500" />
@@ -188,7 +200,7 @@ export default function MobileDrawer({
               </div>
 
               {afterServices.length > 0 && (
-                <div className="my-1.5 h-px bg-white/60" />
+                <div className="my-1.5 h-px bg-slate-200" />
               )}
 
               {afterServices.map((link) => {
@@ -200,8 +212,8 @@ export default function MobileDrawer({
                     onClick={onClose}
                     className={`flex min-h-[46px] items-center justify-between rounded-2xl px-4 text-sm sm:text-base font-bold transition active:scale-[0.99] ${
                       isActive
-                        ? "border border-rose-300 bg-rose-50/95 text-rose-700 shadow-sm"
-                        : "border border-white/60 bg-white/50 text-slate-800 shadow-sm backdrop-blur-md hover:bg-white/80 hover:text-rose-600"
+                        ? "border border-rose-300 bg-rose-50 text-rose-700 shadow-sm"
+                        : "border border-slate-200 bg-slate-50/80 text-slate-800 shadow-sm hover:bg-slate-100 hover:text-rose-600"
                     }`}
                   >
                     <span>{link.label}</span>
@@ -212,14 +224,14 @@ export default function MobileDrawer({
             </nav>
 
             {/* Quick Action Footer in Drawer */}
-            <div className="mt-3 flex flex-col gap-2.5 border-t border-white/60 pt-3">
+            <div className="mt-3 flex flex-col gap-2.5 border-t border-slate-200 pt-3">
               <div className="flex items-center gap-2">
                 <a
                   href={whatsappHref}
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={onClose}
-                  className="flex min-h-[42px] flex-1 items-center justify-center gap-1.5 rounded-full border border-teal-200/80 bg-teal-50/90 text-xs font-bold text-teal-800 shadow-sm backdrop-blur-md transition active:scale-95 hover:bg-teal-100"
+                  className="flex min-h-[42px] flex-1 items-center justify-center gap-1.5 rounded-full border border-teal-200 bg-teal-50 text-xs font-bold text-teal-800 shadow-sm transition active:scale-95 hover:bg-teal-100"
                 >
                   <MessageCircle size={15} className="text-teal-600" />
                   <span>WhatsApp</span>
@@ -229,7 +241,7 @@ export default function MobileDrawer({
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={onClose}
-                  className="flex min-h-[42px] flex-1 items-center justify-center gap-1.5 rounded-full border border-white/80 bg-white/80 text-xs font-bold text-slate-700 shadow-sm backdrop-blur-md transition active:scale-95 hover:bg-white hover:text-rose-600"
+                  className="flex min-h-[42px] flex-1 items-center justify-center gap-1.5 rounded-full border border-slate-200 bg-slate-100 text-xs font-bold text-slate-700 shadow-sm transition active:scale-95 hover:bg-slate-200"
                 >
                   <Facebook size={15} />
                   <span>Facebook</span>
@@ -251,8 +263,9 @@ export default function MobileDrawer({
               </div>
             </div>
           </motion.div>
-        </>
+        </div>
       )}
-    </AnimatePresence>
+    </AnimatePresence>,
+    document.body
   );
 }
