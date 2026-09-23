@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  body {
+    @apply bg-canvas text-ink font-body antialiased;
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-display text-ink tracking-tight;
+  }
+
+  h1, h2 {
+    text-wrap: balance;
+  }
+
+  :lang(bn) {
+    @apply font-bn;
+  }
+
+  ::selection {
+    background-color: #E11D48;
+    color: #FFFFFF;
+  }
+
+  a, button {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  *:focus-visible {
+    outline: 2px solid #E11D48;
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+}
+
+@layer utilities {
+  .pb-safe {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+
+  .glass-panel {
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(226, 232, 240, 0.85);
+  }
+
+  .glass-card {
+    background-color: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    box-shadow: 0 10px 30px -10px rgba(15, 23, 42, 0.05);
+  }
+
+  .glass-card-interactive {
+    background-color: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    box-shadow: 0 8px 24px -8px rgba(15, 23, 42, 0.05);
+    transition: all 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .glass-card-interactive:hover {
+    background-color: #FFFFFF;
+    border-color: rgba(225, 29, 72, 0.35);
+    transform: translateY(-3px);
+    box-shadow: 0 20px 40px -12px rgba(225, 29, 72, 0.12);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

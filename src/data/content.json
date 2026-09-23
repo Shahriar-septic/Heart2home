@@ -1,0 +1,1645 @@
+{
+  "site": {
+    "name": "Heart2Home",
+    "therapist": "Shammy Akhter",
+    "tagline": {
+      "en": "Child & Family Guidance • Shammy Akhter",
+      "bn": "শামী আক্তারের শিশু ও পারিবারিক কাউন্সেলিং"
+    },
+    "phone": "+8801742220444",
+    "whatsapp": "8801742220444",
+    "email": "shammyakhterofficial@gmail.com",
+    "facebook": "https://www.facebook.com/profile.php?id=61584633989473",
+    "developerName": "Shahriar Rafi",
+    "developerUrl": "https://linktr.ee/Shahriar.Rafi",
+    "addressLine1": {
+      "en": "Gulshan area, Dhaka, Bangladesh",
+      "bn": "গুলশান এলাকা, ঢাকা, বাংলাদেশ"
+    },
+    "exactAddressNote": {
+      "en": "Full clinic address is shared after a consultation is confirmed.",
+      "bn": "পরামর্শ নিশ্চিত হওয়ার পর ক্লিনিকের সম্পূর্ণ ঠিকানা জানানো হয়।"
+    }
+  },
+  "nav": {
+    "home": {
+      "en": "Home",
+      "bn": "হোম"
+    },
+    "services": {
+      "en": "Services",
+      "bn": "সেবাসমূহ"
+    },
+    "about": {
+      "en": "About",
+      "bn": "পরিচিতি"
+    },
+    "credentials": {
+      "en": "Credentials",
+      "bn": "সনদপত্র"
+    },
+    "quiz": {
+      "en": "Parent Quiz",
+      "bn": "প্যারেন্ট কুইজ"
+    },
+    "faq": {
+      "en": "FAQ",
+      "bn": "সচরাচর জিজ্ঞাসা"
+    },
+    "contact": {
+      "en": "Contact",
+      "bn": "যোগাযোগ"
+    },
+    "bookConsultation": {
+      "en": "Book a Consultation",
+      "bn": "পরামর্শ বুক করুন"
+    },
+    "chatWhatsapp": {
+      "en": "Chat on WhatsApp",
+      "bn": "হোয়াটসঅ্যাপে কথা বলুন"
+    },
+    "servicesDropdown": [
+      {
+        "href": "/services/child-parent-counselling",
+        "label": {
+          "en": "Child & Parent Counselling",
+          "bn": "শিশু ও অভিভাবক কাউন্সেলিং"
+        }
+      },
+      {
+        "href": "/services/teen-career-guidance",
+        "label": {
+          "en": "Teen & Career Guidance",
+          "bn": "কিশোর ও ক্যারিয়ার গাইডেন্স"
+        }
+      },
+      {
+        "href": "/services/personal-growth-mind-training",
+        "label": {
+          "en": "Personal Growth & Mind Training",
+          "bn": "ব্যক্তিগত উন্নয়ন ও মাইন্ড ট্রেনিং"
+        }
+      },
+      {
+        "href": "/services/dmit-assessment",
+        "label": {
+          "en": "DMIT Assessment",
+          "bn": "ডিএমআইটি অ্যাসেসমেন্ট"
+        }
+      }
+    ]
+  },
+  "footer": {
+    "about": {
+      "en": "Compassionate, research-grounded guidance for children, teens, and the parents raising them — in Dhaka and online.",
+      "bn": "শিশু, কিশোর এবং তাদের অভিভাবকদের জন্য গবেষণাভিত্তিক ও সহানুভূতিশীল পরামর্শ — ঢাকায় এবং অনলাইনে।"
+    },
+    "quickLinksHeading": {
+      "en": "Quick links",
+      "bn": "দ্রুত লিংক"
+    },
+    "contactHeading": {
+      "en": "Get in touch",
+      "bn": "যোগাযোগ করুন"
+    },
+    "disclaimerHeading": {
+      "en": "A note on scope of care",
+      "bn": "সেবার সীমা সম্পর্কে একটি নোট"
+    },
+    "disclaimer": {
+      "en": "Counselling provides psychological guidance, emotional tools, and parenting support. It is not an emergency psychiatric service. If your child is in acute crisis, experiencing severe psychosis, or at risk of self-harm, please seek emergency medical support immediately.",
+      "bn": "কাউন্সেলিং মনস্তাত্ত্বিক দিকনির্দেশনা, মানসিক সরঞ্জাম এবং প্যারেন্টিং সহায়তা প্রদান করে। এটি কোনো জরুরি মানসিক চিকিৎসা সেবা নয়। আপনার সন্তান তীব্র সংকটে থাকলে, গুরুতর মানসিক বিপর্যয়ে থাকলে, বা আত্মক্ষতির ঝুঁকিতে থাকলে অনুগ্রহ করে অবিলম্বে জরুরি চিকিৎসা সহায়তা নিন।"
+    },
+    "copyright": {
+      "en": "All rights reserved.",
+      "bn": "সর্বস্বত্ব সংরক্ষিত।"
+    },
+    "developedBy": {
+      "en": "Developed by",
+      "bn": "ডেভেলপ করেছেন"
+    },
+    "servicesHeading": {
+      "en": "Services",
+      "bn": "সেবাসমূহ"
+    }
+  },
+  "home": {
+    "hero": {
+      "eyebrow": {
+        "en": "Child, Teen & Parent Guidance — Dhaka & Online",
+        "bn": "শিশু, কিশোর ও অভিভাবকদের জন্য দিকনির্দেশনা — ঢাকা ও অনলাইন"
+      },
+      "bengaliHook": "সন্তানের আচরণ বা মানসিক অবস্থা নিয়ে কি আপনি চিন্তিত?",
+      "headline": {
+        "en": "Helping children feel understood. Helping parents feel more confident.",
+        "bn": "সন্তানকে বোঝার সুযোগ, অভিভাবককে আত্মবিশ্বাসী হওয়ার পথ।"
+      },
+      "subhead": {
+        "en": "Compassionate, research-grounded guidance to work through behavioural conflict, emotional withdrawal, and the communication gaps that build up between parents and children.",
+        "bn": "আচরণগত দ্বন্দ্ব, মানসিক নিঃসঙ্গতা এবং অভিভাবক-সন্তানের মধ্যে তৈরি হওয়া যোগাযোগের দূরত্ব কাটিয়ে উঠতে সহানুভূতিশীল ও গবেষণাভিত্তিক দিকনির্দেশনা।"
+      },
+      "ctaPrimary": {
+        "en": "Book a Consultation",
+        "bn": "পরামর্শ বুক করুন"
+      },
+      "ctaSecondary": {
+        "en": "Chat on WhatsApp",
+        "bn": "হোয়াটসঅ্যাপে কথা বলুন"
+      },
+      "credentialCards": [
+        {
+          "en": "Shammy Akhter, MSS in Applied Criminology",
+          "bn": "শামী আক্তার, এমএসএস ইন অ্যাপ্লায়েড ক্রিমিনোলজি"
+        },
+        {
+          "en": "Specialist in Family Dynamics & Delinquency Prevention",
+          "bn": "পারিবারিক গতিবিদ্যা ও অপরাধপ্রবণতা প্রতিরোধে বিশেষজ্ঞ"
+        },
+        {
+          "en": "Certified in CBT, DBT, Life Coaching & Mind Training",
+          "bn": "সিবিটি, ডিবিটি, লাইফ কোচিং ও মাইন্ড ট্রেনিংয়ে সনদপ্রাপ্ত"
+        },
+        {
+          "en": "Certified in Child & Parents Counselling, Career Counselling & Mind Counselling",
+          "bn": "চাইল্ড অ্যান্ড প্যারেন্টস কাউন্সেলিং, ক্যারিয়ার কাউন্সেলিং ও মাইন্ড কাউন্সেলিংয়ে সনদপ্রাপ্ত"
+        }
+      ]
+    },
+    "painPoints": {
+      "heading": {
+        "en": "If any of this feels familiar",
+        "bn": "এর মধ্যে কোনোটি কি পরিচিত মনে হয়?"
+      },
+      "subheading": {
+        "en": "Most families reach out after noticing one or two of these patterns settle in.",
+        "bn": "বেশিরভাগ পরিবার এই ধরনের এক বা দুটি প্যাটার্ন লক্ষ্য করার পরই যোগাযোগ করেন।"
+      },
+      "items": [
+        {
+          "icon": "MessageCircleOff",
+          "title": {
+            "en": "Sudden withdrawal",
+            "bn": "হঠাৎ নিজেকে গুটিয়ে নেওয়া"
+          },
+          "description": {
+            "en": "Your child has gone quiet, avoids conversation, or spends most of their time alone in their room.",
+            "bn": "আপনার সন্তান চুপচাপ হয়ে গেছে, কথা বলা এড়িয়ে চলছে, বা বেশিরভাগ সময় একা ঘরে কাটাচ্ছে।"
+          }
+        },
+        {
+          "icon": "Flame",
+          "title": {
+            "en": "Anger & defiance",
+            "bn": "রাগ ও অবাধ্যতা"
+          },
+          "description": {
+            "en": "Small requests turn into arguments, and daily routines have become a battle of wills.",
+            "bn": "ছোট ছোট অনুরোধও তর্কে রূপ নেয়, দৈনন্দিন রুটিন এখন এক ধরনের সংগ্রামে পরিণত হয়েছে।"
+          }
+        },
+        {
+          "icon": "Smartphone",
+          "title": {
+            "en": "Screen reliance & academic drop",
+            "bn": "স্ক্রিন-নির্ভরতা ও পড়াশোনায় ঘাটতি"
+          },
+          "description": {
+            "en": "Grades are slipping while screen time keeps climbing, and motivation seems to have disappeared.",
+            "bn": "স্ক্রিনে সময় বাড়ছে, ফলাফল পড়ে যাচ্ছে, এবং পড়াশোনার আগ্রহ যেন হারিয়ে গেছে।"
+          }
+        },
+        {
+          "icon": "Users",
+          "title": {
+            "en": "Daily friction at home",
+            "bn": "প্রতিদিনের পারিবারিক ঘর্ষণ"
+          },
+          "description": {
+            "en": "Conversations turn to yelling more often than not, and the whole household feels tense.",
+            "bn": "কথোপকথন প্রায়ই চিৎকারে পরিণত হয়, পুরো পরিবারে একটা চাপা উত্তেজনা কাজ করে।"
+          }
+        },
+        {
+          "icon": "GraduationCap",
+          "title": {
+            "en": "Exam distress & burnout",
+            "bn": "পরীক্ষার চাপ ও ক্লান্তি"
+          },
+          "description": {
+            "en": "Exam season brings panic, sleeplessness, or a sudden loss of interest in subjects they once enjoyed.",
+            "bn": "পরীক্ষার সময় আতঙ্ক, ঘুমহীনতা, বা পছন্দের বিষয়ের প্রতিও আগ্রহ হারিয়ে ফেলা দেখা যায়।"
+          }
+        },
+        {
+          "icon": "HeartCrack",
+          "title": {
+            "en": "Parental exhaustion",
+            "bn": "অভিভাবকের ক্লান্তি"
+          },
+          "description": {
+            "en": "You second-guess every reaction and feel like you are managing a crisis alone, every single day.",
+            "bn": "প্রতিটি প্রতিক্রিয়া নিয়ে দ্বিধায় থাকেন, প্রতিদিন একাই যেন একটি সংকট সামলাচ্ছেন এমন অনুভব হয়।"
+          }
+        }
+      ]
+    },
+    "pillars": {
+      "heading": {
+        "en": "Three ways I can help",
+        "bn": "সাহায্য করার তিনটি পথ"
+      },
+      "subheading": {
+        "en": "Each family arrives with a different starting point — here is where most conversations begin.",
+        "bn": "প্রতিটি পরিবার ভিন্ন জায়গা থেকে শুরু করে — বেশিরভাগ আলোচনা এই তিনটি জায়গার কোনো একটি থেকে শুরু হয়।"
+      },
+      "items": [
+        {
+          "icon": "Baby",
+          "href": "/services/child-parent-counselling",
+          "title": {
+            "en": "Child & Parent Counselling",
+            "bn": "শিশু ও অভিভাবক কাউন্সেলিং"
+          },
+          "description": {
+            "en": "Resolving emotional outbursts, defiance, anxiety, and screen overuse while rebuilding trust between parent and child.",
+            "bn": "মানসিক বিস্ফোরণ, অবাধ্যতা, উদ্বেগ ও স্ক্রিন-আসক্তি সমাধান করে অভিভাবক-সন্তানের মধ্যে আস্থা পুনর্গঠন।"
+          }
+        },
+        {
+          "icon": "Compass",
+          "href": "/services/teen-career-guidance",
+          "title": {
+            "en": "Teen & Career Guidance",
+            "bn": "কিশোর ও ক্যারিয়ার গাইডেন্স"
+          },
+          "description": {
+            "en": "Academic burnout, exam stress, school counselling, aptitude exploration, and goal-setting for teens.",
+            "bn": "কিশোরদের জন্য পড়াশোনার চাপ, পরীক্ষার উদ্বেগ, স্কুল কাউন্সেলিং, দক্ষতা অন্বেষণ ও লক্ষ্য নির্ধারণ।"
+          }
+        },
+        {
+          "icon": "Sprout",
+          "href": "/services/personal-growth-mind-training",
+          "title": {
+            "en": "Personal Growth & Mind Training",
+            "bn": "ব্যক্তিগত উন্নয়ন ও মাইন্ড ট্রেনিং"
+          },
+          "description": {
+            "en": "Parental stress relief, emotional regulation, habit-building, and restoring harmony inside the family.",
+            "bn": "অভিভাবকের মানসিক চাপ কমানো, আবেগ নিয়ন্ত্রণ, অভ্যাস গঠন এবং পারিবারিক সম্প্রীতি পুনরুদ্ধার।"
+          }
+        }
+      ],
+      "dmitNote": {
+        "en": "Looking for a learning-style assessment instead? See the",
+        "bn": "শেখার ধরন যাচাইয়ের অ্যাসেসমেন্ট খুঁজছেন?"
+      },
+      "dmitLink": {
+        "en": "DMIT Assessment overview",
+        "bn": "ডিএমআইটি অ্যাসেসমেন্ট বিস্তারিত দেখুন"
+      }
+    },
+    "quizTeaser": {
+      "heading": {
+        "en": "Not sure where you stand?",
+        "bn": "নিশ্চিত নন কোথায় দাঁড়িয়ে আছেন?"
+      },
+      "description": {
+        "en": "Answer four short questions about what you're seeing at home. You'll get a private, judgement-free read on what to do next — it takes about two minutes.",
+        "bn": "বাড়িতে যা লক্ষ্য করছেন তা নিয়ে চারটি সংক্ষিপ্ত প্রশ্নের উত্তর দিন। কী করা উচিত তার একটি ব্যক্তিগত ও নিরপেক্ষ ধারণা পাবেন — সময় লাগবে প্রায় দুই মিনিট।"
+      },
+      "cta": {
+        "en": "Take the Parent Readiness Check",
+        "bn": "প্যারেন্ট রেডিনেস চেক শুরু করুন"
+      }
+    },
+    "trustBadges": {
+      "heading": {
+        "en": "Grounded in training, not guesswork",
+        "bn": "অনুমান নয়, প্রশিক্ষণের ভিত্তিতে"
+      },
+      "items": [
+        {
+          "en": "MSS, Applied Criminology & Police Management",
+          "bn": "এমএসএস, অ্যাপ্লায়েড ক্রিমিনোলজি অ্যান্ড পুলিশ ম্যানেজমেন্ট"
+        },
+        {
+          "en": "CBT & DBT trained",
+          "bn": "সিবিটি ও ডিবিটি প্রশিক্ষণপ্রাপ্ত"
+        },
+        {
+          "en": "Child & Parents Counselling Diploma",
+          "bn": "চাইল্ড অ্যান্ড প্যারেন্টস কাউন্সেলিং ডিপ্লোমা"
+        },
+        {
+          "en": "School Counselling & Career Guidance Certified",
+          "bn": "স্কুল কাউন্সেলিং ও ক্যারিয়ার গাইডেন্স সনদপ্রাপ্ত"
+        }
+      ]
+    },
+    "bio": {
+      "heading": {
+        "en": "A little about Shammy",
+        "bn": "শামী সম্পর্কে সংক্ষেপে"
+      },
+      "body": {
+        "en": "My background is in Applied Criminology, where my research looked closely at how early family bonding and parental attachment shape youth behaviour later in life. That research is still the foundation of how I work with families today: behaviour is rarely the real problem — it's usually a signal of something underneath that hasn't been named yet.",
+        "bn": "আমার পড়াশোনা অ্যাপ্লায়েড ক্রিমিনোলজিতে, যেখানে আমার গবেষণা ছিল কীভাবে শৈশবের পারিবারিক বন্ধন ও অভিভাবকের সাথে সংযুক্তি পরবর্তী জীবনে কিশোর আচরণকে প্রভাবিত করে তা নিয়ে। সেই গবেষণাই আজও আমার কাজের ভিত্তি — আচরণ প্রায়শই আসল সমস্যা নয়, এটি সাধারণত ভেতরের এমন কিছুর ইঙ্গিত যা এখনও চিহ্নিত করা হয়নি।"
+      },
+      "cta": {
+        "en": "Read the full story",
+        "bn": "সম্পূর্ণ গল্প পড়ুন"
+      }
+    },
+    "testimonials": {
+      "heading": {
+        "en": "What families have shared",
+        "bn": "পরিবারগুলো যা বলেছে"
+      },
+      "note": {
+        "en": "Shared with permission. Identifying details have been changed to protect privacy.",
+        "bn": "অনুমতি নিয়ে প্রকাশিত। গোপনীয়তা রক্ষার জন্য পরিচয়সূচক তথ্য পরিবর্তন করা হয়েছে।"
+      },
+      "items": [
+        {
+          "quote": {
+            "en": "We came in after months of shouting matches with our fourteen-year-old. Within a few sessions we finally understood what he was actually trying to tell us.",
+            "bn": "আমাদের চৌদ্দ বছরের ছেলের সাথে মাসের পর মাস চিৎকার-চেচামেচির পর আমরা এসেছিলাম। কয়েকটি সেশনের মধ্যেই বুঝতে পারলাম সে আসলে কী বলতে চাইছিল।"
+          },
+          "attribution": {
+            "en": "Parent of a teenager, Dhaka",
+            "bn": "এক কিশোরের অভিভাবক, ঢাকা"
+          }
+        },
+        {
+          "quote": {
+            "en": "Shammy never made us feel judged for struggling. She gave us small, specific things to try, and they actually worked.",
+            "bn": "শামী আমাদের কখনো দোষারোপ করেননি। তিনি ছোট ছোট নির্দিষ্ট পরামর্শ দিয়েছিলেন, এবং তা সত্যিই কাজে লেগেছে।"
+          },
+          "attribution": {
+            "en": "Mother of two",
+            "bn": "দুই সন্তানের মা"
+          }
+        },
+        {
+          "quote": {
+            "en": "The online sessions worked well around our schedule, and my daughter opened up more than I expected.",
+            "bn": "অনলাইন সেশনগুলো আমাদের সময়সূচির সাথে বেশ মানানসই ছিল, এবং আমার মেয়ে আশার চেয়েও বেশি খুলে কথা বলেছে।"
+          },
+          "attribution": {
+            "en": "Parent, online consultation",
+            "bn": "অভিভাবক, অনলাইন পরামর্শ"
+          }
+        }
+      ]
+    },
+    "bookingCta": {
+      "heading": {
+        "en": "Ready to talk it through?",
+        "bn": "কথা বলার জন্য প্রস্তুত?"
+      },
+      "description": {
+        "en": "A first conversation doesn't commit you to anything. It's a chance to describe what's happening and hear what support could look like.",
+        "bn": "প্রথম কথোপকথন আপনাকে কোনো কিছুর জন্য প্রতিশ্রুতিবদ্ধ করে না। এটি শুধু আপনার পরিস্থিতি বর্ণনা করার এবং কী ধরনের সহায়তা সম্ভব তা জানার একটি সুযোগ।"
+      }
+    }
+  },
+  "servicesIndex": {
+    "hero": {
+      "eyebrow": {
+        "en": "Services",
+        "bn": "সেবাসমূহ"
+      },
+      "heading": {
+        "en": "Support built around where your family is right now",
+        "bn": "আপনার পরিবার এখন যেখানে আছে, তার জন্য উপযোগী সহায়তা"
+      },
+      "description": {
+        "en": "Every family's starting point is different. These are the four ways families most often begin working with me.",
+        "bn": "প্রতিটি পরিবারের শুরুর জায়গা ভিন্ন। এই চারটি উপায়ে পরিবারগুলো সাধারণত আমার সাথে কাজ শুরু করে।"
+      }
+    },
+    "cards": [
+      {
+        "href": "/services/child-parent-counselling",
+        "icon": "Baby",
+        "title": {
+          "en": "Child & Parent Counselling",
+          "bn": "শিশু ও অভিভাবক কাউন্সেলিং"
+        },
+        "description": {
+          "en": "For behavioural struggles, emotional regulation, and rebuilding the parent-child bond.",
+          "bn": "আচরণগত সমস্যা, আবেগ নিয়ন্ত্রণ এবং অভিভাবক-সন্তানের বন্ধন পুনর্গঠনের জন্য।"
+        }
+      },
+      {
+        "href": "/services/teen-career-guidance",
+        "icon": "Compass",
+        "title": {
+          "en": "Teen & Career Guidance",
+          "bn": "কিশোর ও ক্যারিয়ার গাইডেন্স"
+        },
+        "description": {
+          "en": "For academic pressure, motivation slumps, and finding direction.",
+          "bn": "পড়াশোনার চাপ, আগ্রহ হারিয়ে ফেলা এবং দিকনির্দেশনা খুঁজে পাওয়ার জন্য।"
+        }
+      },
+      {
+        "href": "/services/personal-growth-mind-training",
+        "icon": "Sprout",
+        "title": {
+          "en": "Personal Growth & Mind Training",
+          "bn": "ব্যক্তিগত উন্নয়ন ও মাইন্ড ট্রেনিং"
+        },
+        "description": {
+          "en": "For emotional wellness, stress management, and mindset work.",
+          "bn": "মানসিক সুস্থতা, চাপ ব্যবস্থাপনা এবং মানসিকতা গঠনের জন্য।"
+        }
+      },
+      {
+        "href": "/services/dmit-assessment",
+        "icon": "Fingerprint",
+        "title": {
+          "en": "DMIT Assessment",
+          "bn": "ডিএমআইটি অ্যাসেসমেন্ট"
+        },
+        "description": {
+          "en": "A supplementary tool for exploring learning style and sensory preferences.",
+          "bn": "শেখার ধরন ও সংবেদনশীল পছন্দ অন্বেষণের একটি সহায়ক টুল।"
+        }
+      }
+    ]
+  },
+  "childParentPage": {
+    "eyebrow": {
+      "en": "Child & Parent Counselling",
+      "bn": "শিশু ও অভিভাবক কাউন্সেলিং"
+    },
+    "heading": {
+      "en": "Understand what's underneath the behaviour",
+      "bn": "আচরণের পেছনে যা লুকিয়ে আছে, তা বোঝা"
+    },
+    "intro": {
+      "en": "Tantrums, defiance, withdrawal, and screen overuse are rarely random. They are usually a child's best available way of communicating something they can't yet put into words. This work focuses on decoding that behaviour together and rebuilding a calmer, more trusting relationship at home.",
+      "bn": "রাগ, অবাধ্যতা, নিজেকে গুটিয়ে নেওয়া এবং স্ক্রিন-আসক্তি সাধারণত হুট করে ঘটে না। এগুলো সাধারণত একটি শিশুর নিজের এমন কিছু প্রকাশ করার সর্বোত্তম উপায়, যা সে এখনো কথায় বলতে পারে না। এই কাজে আমরা একসাথে সেই আচরণ বুঝি এবং বাড়িতে আরও শান্ত ও আস্থাপূর্ণ সম্পর্ক গড়ে তুলি।"
+    },
+    "focusHeading": {
+      "en": "What we work on together",
+      "bn": "আমরা একসাথে যা নিয়ে কাজ করি"
+    },
+    "focusAreas": [
+      {
+        "icon": "Flame",
+        "title": {
+          "en": "Emotional outbursts & defiance",
+          "bn": "মানসিক বিস্ফোরণ ও অবাধ্যতা"
+        },
+        "description": {
+          "en": "Understanding the triggers behind meltdowns and building calmer, more predictable responses on both sides.",
+          "bn": "মানসিক বিস্ফোরণের পেছনের কারণ বোঝা এবং উভয় পক্ষের জন্য শান্ত ও অনুমানযোগ্য প্রতিক্রিয়া তৈরি করা।"
+        }
+      },
+      {
+        "icon": "CloudRain",
+        "title": {
+          "en": "Anxiety & emotional regulation",
+          "bn": "উদ্বেগ ও আবেগ নিয়ন্ত্রণ"
+        },
+        "description": {
+          "en": "Age-appropriate tools that help a child name, tolerate, and move through big feelings.",
+          "bn": "শিশুকে তার বড় আবেগগুলো চেনা, সহ্য করা এবং সামলে ওঠার জন্য বয়স-উপযোগী কৌশল।"
+        }
+      },
+      {
+        "icon": "Smartphone",
+        "title": {
+          "en": "Screen overuse",
+          "bn": "স্ক্রিন-আসক্তি"
+        },
+        "description": {
+          "en": "Practical, non-punitive routines that reduce screen dependency without turning it into another daily fight.",
+          "bn": "স্ক্রিন-নির্ভরতা কমাতে ব্যবহারিক ও শাস্তিমূলক নয় এমন রুটিন, যা আরেকটি দৈনন্দিন লড়াই তৈরি করে না।"
+        }
+      },
+      {
+        "icon": "Users",
+        "title": {
+          "en": "Parent-child bonding",
+          "bn": "অভিভাবক-সন্তান বন্ধন"
+        },
+        "description": {
+          "en": "Rebuilding the sense of safety and trust that daily conflict tends to wear down.",
+          "bn": "প্রতিদিনের দ্বন্দ্বে যে নিরাপত্তা ও আস্থার অনুভূতি ক্ষয়প্রাপ্ত হয়, তা পুনর্গঠন করা।"
+        }
+      }
+    ],
+    "processHeading": {
+      "en": "How sessions typically go",
+      "bn": "সেশনগুলো সাধারণত যেভাবে এগোয়"
+    },
+    "process": [
+      {
+        "title": {
+          "en": "Understanding the pattern",
+          "bn": "প্যাটার্ন বোঝা"
+        },
+        "description": {
+          "en": "The first session focuses on listening — to the parent's account and, where appropriate, the child's own perspective.",
+          "bn": "প্রথম সেশনে মূলত শোনা হয় — অভিভাবকের বর্ণনা এবং প্রয়োজনে শিশুর নিজের দৃষ্টিভঙ্গিও।"
+        }
+      },
+      {
+        "title": {
+          "en": "A working plan",
+          "bn": "একটি কার্যকরী পরিকল্পনা"
+        },
+        "description": {
+          "en": "Together we agree on a small number of specific, realistic changes to try at home before the next session.",
+          "bn": "পরবর্তী সেশনের আগে বাড়িতে চেষ্টা করার জন্য কয়েকটি নির্দিষ্ট ও বাস্তবসম্মত পরিবর্তন নিয়ে একসাথে সিদ্ধান্ত নেওয়া হয়।"
+        }
+      },
+      {
+        "title": {
+          "en": "Steady follow-through",
+          "bn": "ধারাবাহিক অনুসরণ"
+        },
+        "description": {
+          "en": "Regular sessions track what's working, adjust what isn't, and slowly rebuild trust in both directions.",
+          "bn": "নিয়মিত সেশনে কী কাজ করছে তা পর্যবেক্ষণ করা হয়, যা কাজ করছে না তা সমন্বয় করা হয়, এবং ধীরে ধীরে উভয় পক্ষের আস্থা পুনর্গঠন করা হয়।"
+        }
+      }
+    ],
+    "cta": {
+      "en": "Discuss your child's situation",
+      "bn": "আপনার সন্তানের বিষয়ে কথা বলুন"
+    }
+  },
+  "teenCareerPage": {
+    "eyebrow": {
+      "en": "Teen & Career Guidance",
+      "bn": "কিশোর ও ক্যারিয়ার গাইডেন্স"
+    },
+    "heading": {
+      "en": "Find direction without the panic",
+      "bn": "আতঙ্ক ছাড়াই দিকনির্দেশনা খুঁজে পাওয়া"
+    },
+    "intro": {
+      "en": "Academic pressure in Dhaka starts early and rarely lets up. This work helps teenagers manage exam stress, reconnect with motivation, and think through career direction — without every conversation turning into a lecture about marks.",
+      "bn": "ঢাকায় পড়াশোনার চাপ শুরু হয় খুব তাড়াতাড়ি এবং প্রায়ই কমে না। এই কাজ কিশোরদের পরীক্ষার চাপ সামলাতে, আগ্রহ ফিরে পেতে এবং প্রতিটি কথোপকথন নম্বরের বক্তৃতায় পরিণত না করেই ক্যারিয়ারের দিক নিয়ে চিন্তা করতে সাহায্য করে।"
+    },
+    "focusHeading": {
+      "en": "What we work on together",
+      "bn": "আমরা একসাথে যা নিয়ে কাজ করি"
+    },
+    "focusAreas": [
+      {
+        "icon": "AlarmClock",
+        "title": {
+          "en": "Exam stress & burnout",
+          "bn": "পরীক্ষার চাপ ও ক্লান্তি"
+        },
+        "description": {
+          "en": "Practical strategies for managing exam anxiety, sleep disruption, and pre-exam panic.",
+          "bn": "পরীক্ষার উদ্বেগ, ঘুমের সমস্যা এবং পরীক্ষার আগের আতঙ্ক সামলানোর ব্যবহারিক কৌশল।"
+        }
+      },
+      {
+        "icon": "BatteryLow",
+        "title": {
+          "en": "Motivation slumps",
+          "bn": "আগ্রহ হারিয়ে ফেলা"
+        },
+        "description": {
+          "en": "Understanding what's really behind a sudden loss of interest — it's rarely just laziness.",
+          "bn": "হঠাৎ আগ্রহ হারিয়ে ফেলার পেছনে আসল কারণ বোঝা — এটি খুব কমই শুধু অলসতা।"
+        }
+      },
+      {
+        "icon": "School",
+        "title": {
+          "en": "School counselling support",
+          "bn": "স্কুল কাউন্সেলিং সহায়তা"
+        },
+        "description": {
+          "en": "Working alongside a teen's school life — peer pressure, teacher relationships, and adjustment issues.",
+          "bn": "কিশোরের স্কুলজীবনের পাশাপাশি কাজ করা — সহপাঠীদের চাপ, শিক্ষকের সাথে সম্পর্ক এবং মানিয়ে নেওয়ার সমস্যা।"
+        }
+      },
+      {
+        "icon": "Target",
+        "title": {
+          "en": "Aptitude & goal-setting",
+          "bn": "দক্ষতা ও লক্ষ্য নির্ধারণ"
+        },
+        "description": {
+          "en": "Structured conversations that help a teenager explore strengths and set goals that actually feel like their own.",
+          "bn": "কাঠামোবদ্ধ আলোচনার মাধ্যমে কিশোরকে তার শক্তির জায়গা খুঁজে পেতে এবং নিজের মনে হয় এমন লক্ষ্য স্থির করতে সাহায্য করা।"
+        }
+      }
+    ],
+    "processHeading": {
+      "en": "How sessions typically go",
+      "bn": "সেশনগুলো সাধারণত যেভাবে এগোয়"
+    },
+    "process": [
+      {
+        "title": {
+          "en": "A private first conversation",
+          "bn": "প্রথম ব্যক্তিগত কথোপকথন"
+        },
+        "description": {
+          "en": "Teens are given space to speak honestly, with clear boundaries on what is and isn't shared with parents.",
+          "bn": "কিশোরকে খোলামেলা কথা বলার সুযোগ দেওয়া হয়, অভিভাবকের সাথে কী শেয়ার করা হবে আর কী হবে না তার স্পষ্ট সীমা রেখে।"
+        }
+      },
+      {
+        "title": {
+          "en": "Building a workable routine",
+          "bn": "কার্যকর রুটিন তৈরি"
+        },
+        "description": {
+          "en": "Small, sustainable study and rest routines replace all-or-nothing pressure.",
+          "bn": "সব-বা-কিছুই নয় এমন চাপের বদলে ছোট ও টেকসই পড়াশোনা ও বিশ্রামের রুটিন তৈরি করা হয়।"
+        }
+      },
+      {
+        "title": {
+          "en": "Looking ahead together",
+          "bn": "একসাথে সামনের দিকে তাকানো"
+        },
+        "description": {
+          "en": "Career and subject-choice conversations are grounded in the teen's actual interests, not just family expectations.",
+          "bn": "ক্যারিয়ার ও বিষয় নির্বাচনের আলোচনা কিশোরের প্রকৃত আগ্রহের ওপর ভিত্তি করে হয়, শুধু পারিবারিক প্রত্যাশার ওপর নয়।"
+        }
+      }
+    ],
+    "cta": {
+      "en": "Discuss your teen's situation",
+      "bn": "আপনার কিশোরের বিষয়ে কথা বলুন"
+    }
+  },
+  "personalGrowthPage": {
+    "eyebrow": {
+      "en": "Personal Growth & Mind Training",
+      "bn": "ব্যক্তিগত উন্নয়ন ও মাইন্ড ট্রেনিং"
+    },
+    "heading": {
+      "en": "Support for the parent, not just the child",
+      "bn": "শুধু সন্তান নয়, অভিভাবকের জন্যও সহায়তা"
+    },
+    "intro": {
+      "en": "Parenting a struggling child is exhausting, and that exhaustion shapes every interaction at home. This work is for the parent who needs their own space to regulate stress, rebuild emotional steadiness, and restore harmony in the wider family relationship.",
+      "bn": "একজন সংগ্রামরত সন্তানের অভিভাবক হওয়া ক্লান্তিকর, এবং সেই ক্লান্তি বাড়ির প্রতিটি মুহূর্তকে প্রভাবিত করে। এই কাজ সেই অভিভাবকের জন্য, যার নিজের চাপ সামলানো, মানসিক স্থিতিশীলতা পুনর্গঠন এবং পারিবারিক সম্পর্কে সম্প্রীতি ফিরিয়ে আনার জন্য নিজস্ব একটি জায়গা প্রয়োজন।"
+    },
+    "focusHeading": {
+      "en": "What we work on together",
+      "bn": "আমরা একসাথে যা নিয়ে কাজ করি"
+    },
+    "focusAreas": [
+      {
+        "icon": "Wind",
+        "title": {
+          "en": "Parental stress relief",
+          "bn": "অভিভাবকের মানসিক চাপ কমানো"
+        },
+        "description": {
+          "en": "Practical ways to release the accumulated tension of managing a difficult season at home.",
+          "bn": "বাড়িতে কঠিন সময় সামলানোর ফলে জমে ওঠা চাপ কমানোর ব্যবহারিক উপায়।"
+        }
+      },
+      {
+        "icon": "Waves",
+        "title": {
+          "en": "Emotional regulation",
+          "bn": "আবেগ নিয়ন্ত্রণ"
+        },
+        "description": {
+          "en": "Recognising your own reactive patterns and building calmer, more intentional responses.",
+          "bn": "নিজের প্রতিক্রিয়াশীল প্যাটার্নগুলো চিনে নিয়ে শান্ত ও সুচিন্তিত প্রতিক্রিয়া গড়ে তোলা।"
+        }
+      },
+      {
+        "icon": "Repeat",
+        "title": {
+          "en": "Habit building",
+          "bn": "অভ্যাস গঠন"
+        },
+        "description": {
+          "en": "Small, repeatable routines — for you and the household — that compound into real change.",
+          "bn": "আপনার ও পরিবারের জন্য ছোট ছোট পুনরাবৃত্তিযোগ্য রুটিন, যা ধীরে ধীরে প্রকৃত পরিবর্তন আনে।"
+        }
+      },
+      {
+        "icon": "HeartHandshake",
+        "title": {
+          "en": "Relationship harmony",
+          "bn": "সম্পর্কে সম্প্রীতি"
+        },
+        "description": {
+          "en": "Working through the tension that a difficult parenting season often creates between partners and across the family.",
+          "bn": "কঠিন প্যারেন্টিং সময় সঙ্গী ও পরিবারের মধ্যে যে উত্তেজনা তৈরি করে, তা কাটিয়ে ওঠা।"
+        }
+      }
+    ],
+    "processHeading": {
+      "en": "How sessions typically go",
+      "bn": "সেশনগুলো সাধারণত যেভাবে এগোয়"
+    },
+    "process": [
+      {
+        "title": {
+          "en": "Naming what's heavy",
+          "bn": "যা ভারী মনে হচ্ছে তা চিহ্নিত করা"
+        },
+        "description": {
+          "en": "Space to speak honestly about fatigue, guilt, or frustration without being judged for it.",
+          "bn": "ক্লান্তি, অপরাধবোধ বা হতাশা নিয়ে বিচারের ভয় ছাড়াই খোলাখুলি কথা বলার সুযোগ।"
+        }
+      },
+      {
+        "title": {
+          "en": "Tools that fit your life",
+          "bn": "আপনার জীবনের সাথে মানানসই কৌশল"
+        },
+        "description": {
+          "en": "Coping tools chosen for what actually fits your schedule and temperament, not a generic checklist.",
+          "bn": "সাধারণ কোনো তালিকা নয়, বরং আপনার সময়সূচি ও স্বভাবের সাথে সত্যিই মানানসই কৌশল বেছে নেওয়া।"
+        }
+      },
+      {
+        "title": {
+          "en": "Steady, ongoing check-ins",
+          "bn": "স্থির ও চলমান যোগাযোগ"
+        },
+        "description": {
+          "en": "Regular sessions that give you a consistent space to reset, independent of how the week at home has gone.",
+          "bn": "সপ্তাহে বাড়িতে যেমনই কিছু ঘটুক না কেন, নিয়মিত সেশন আপনাকে নিজেকে পুনরায় গুছিয়ে নেওয়ার একটি স্থায়ী জায়গা দেয়।"
+        }
+      }
+    ],
+    "cta": {
+      "en": "Book time for yourself",
+      "bn": "নিজের জন্য সময় বুক করুন"
+    }
+  },
+  "dmitPage": {
+    "eyebrow": {
+      "en": "DMIT Assessment",
+      "bn": "ডিএমআইটি অ্যাসেসমেন্ট"
+    },
+    "heading": {
+      "en": "A learning-style tool, used with the right expectations",
+      "bn": "সঠিক প্রত্যাশা নিয়ে ব্যবহৃত একটি শেখার-ধরন যাচাইয়ের টুল"
+    },
+    "intro": {
+      "en": "DMIT (Dermatoglyphics Multiple Intelligence Test) analyses fingerprint patterns as a way of estimating broad sensory and learning-style tendencies — for example, whether a child tends to process information more visually, verbally, or kinaesthetically.",
+      "bn": "ডিএমআইটি (ডার্মাটোগ্লিফিক্স মাল্টিপল ইন্টেলিজেন্স টেস্ট) আঙুলের ছাপের প্যাটার্ন বিশ্লেষণ করে শিশুর সাধারণ সংবেদনশীল ও শেখার প্রবণতা অনুমান করার একটি উপায় — যেমন, একটি শিশু তথ্য বেশি চোখে দেখে, কথায়, নাকি কাজের মাধ্যমে বুঝতে পারে।"
+    },
+    "clarityHeading": {
+      "en": "What this assessment is — and isn't",
+      "bn": "এই অ্যাসেসমেন্ট আসলে কী — এবং কী নয়"
+    },
+    "isList": [
+      {
+        "en": "A supplementary tool that offers one perspective on learning style and sensory preference.",
+        "bn": "শেখার ধরন ও সংবেদনশীল পছন্দ সম্পর্কে একটি দৃষ্টিভঙ্গি দেয় এমন একটি সহায়ক টুল।"
+      },
+      {
+        "en": "Most useful when discussed alongside a parent's own observations of the child.",
+        "bn": "অভিভাবকের নিজস্ব পর্যবেক্ষণের পাশাপাশি আলোচনা করা হলে সবচেয়ে কার্যকর।"
+      },
+      {
+        "en": "A conversation starter for how a child might study, focus, or engage more comfortably.",
+        "bn": "একটি শিশু কীভাবে আরও স্বাচ্ছন্দ্যে পড়াশোনা করতে, মনোযোগ দিতে বা সম্পৃক্ত হতে পারে, তা নিয়ে আলোচনার সূচনাবিন্দু।"
+      }
+    ],
+    "isNotList": [
+      {
+        "en": "Not an IQ test, and it does not measure intelligence.",
+        "bn": "এটি কোনো আইকিউ টেস্ট নয়, এবং বুদ্ধিমত্তা পরিমাপ করে না।"
+      },
+      {
+        "en": "Not a medical or diagnostic test of any kind.",
+        "bn": "এটি কোনো ধরনের চিকিৎসা বা রোগ নির্ণয়ের পরীক্ষা নয়।"
+      },
+      {
+        "en": "Not a predictor of a child's destiny, career, or future success.",
+        "bn": "এটি শিশুর ভবিষ্যৎ, ক্যারিয়ার বা সাফল্যের পূর্বাভাসদাতা নয়।"
+      }
+    ],
+    "processHeading": {
+      "en": "What the process looks like",
+      "bn": "প্রক্রিয়াটি কেমন"
+    },
+    "process": [
+      {
+        "title": {
+          "en": "Fingerprint scan",
+          "bn": "আঙুলের ছাপ স্ক্যান"
+        },
+        "description": {
+          "en": "A quick, painless scan of fingerprint patterns, done in person.",
+          "bn": "সরাসরি উপস্থিত হয়ে আঙুলের ছাপের একটি দ্রুত ও ব্যথাহীন স্ক্যান করা হয়।"
+        }
+      },
+      {
+        "title": {
+          "en": "Report walkthrough",
+          "bn": "রিপোর্ট পর্যালোচনা"
+        },
+        "description": {
+          "en": "A session to go through the results together, in plain language, with room for questions.",
+          "bn": "সহজ ভাষায় একসাথে ফলাফল পর্যালোচনা করার একটি সেশন, প্রশ্ন করার সুযোগসহ।"
+        }
+      },
+      {
+        "title": {
+          "en": "Practical next steps",
+          "bn": "বাস্তবসম্মত পরবর্তী পদক্ষেপ"
+        },
+        "description": {
+          "en": "Grounded suggestions for study habits and engagement — never framed as a fixed verdict.",
+          "bn": "পড়াশোনার অভ্যাস ও সম্পৃক্ততার জন্য বাস্তবসম্মত পরামর্শ — কখনোই কোনো চূড়ান্ত সিদ্ধান্ত হিসেবে নয়।"
+        }
+      }
+    ],
+    "cta": {
+      "en": "Ask about DMIT for your child",
+      "bn": "আপনার সন্তানের জন্য ডিএমআইটি নিয়ে জানুন"
+    }
+  },
+  "aboutPage": {
+    "eyebrow": {
+      "en": "About Shammy",
+      "bn": "শামী সম্পর্কে"
+    },
+    "heading": {
+      "en": "Why I work with families the way I do",
+      "bn": "কেন আমি এভাবে পরিবারগুলোর সাথে কাজ করি"
+    },
+    "narrative": [
+      {
+        "en": "My path into this work started in an unexpected place: a Master's in Applied Criminology and Police Management. My research there focused on something that has stayed with me ever since — the direct correlation between early family bonding, parental attachment, and youth behavioural patterns.",
+        "bn": "এই কাজের পথে আমার যাত্রা শুরু হয়েছিল এক অপ্রত্যাশিত জায়গা থেকে — অ্যাপ্লায়েড ক্রিমিনোলজি অ্যান্ড পুলিশ ম্যানেজমেন্টে মাস্টার্স ডিগ্রি দিয়ে। সেখানে আমার গবেষণা এমন একটি বিষয়ে কেন্দ্রীভূত ছিল যা আজও আমার সাথে রয়ে গেছে — শৈশবের পারিবারিক বন্ধন, অভিভাবকের সাথে সংযুক্তি এবং কিশোর আচরণের প্যাটার্নের মধ্যে সরাসরি সম্পর্ক।"
+      },
+      {
+        "en": "That research showed something both simple and easy to forget in the middle of a difficult parenting season: children who feel securely attached at home are far less likely to develop the behavioural patterns that later turn into bigger struggles. The reverse is also true — and it's rarely anyone's fault. Family bonds strain under pressure, life gets busy, and small disconnects compound quietly over time.",
+        "bn": "সেই গবেষণা এমন একটি বিষয় তুলে ধরেছিল যা একই সাথে সহজ, অথচ কঠিন প্যারেন্টিং সময়ে ভুলে যাওয়া সহজ — বাড়িতে নিরাপদে সংযুক্ত অনুভব করা শিশুদের পরবর্তীতে বড় সমস্যায় রূপ নেওয়া আচরণগত প্যাটার্ন তৈরি হওয়ার সম্ভাবনা অনেক কম। এর বিপরীতটাও সত্যি — এবং এটি প্রায়ই কারো দোষ নয়। চাপের মধ্যে পারিবারিক বন্ধনে টানাপোড়েন তৈরি হয়, জীবন ব্যস্ত হয়ে ওঠে, এবং ছোট ছোট দূরত্ব সময়ের সাথে নিঃশব্দে জমতে থাকে।"
+      },
+      {
+        "en": "That framing shapes everything about how I counsel today. I am not here to diagnose a child as 'the problem' or to hand parents a list of rules. I am here to help a family understand the pattern they are stuck in, and to rebuild the bond underneath it — with tools drawn from CBT, DBT, life coaching, and structured mind training, applied in a way that fits each family's own rhythm.",
+        "bn": "এই দৃষ্টিভঙ্গিই আজ আমার কাউন্সেলিং করার প্রতিটি দিক নির্ধারণ করে। আমি এখানে কোনো শিশুকে 'সমস্যা' হিসেবে চিহ্নিত করতে বা অভিভাবকদের নিয়মের তালিকা ধরিয়ে দিতে আসিনি। আমি এখানে একটি পরিবারকে তাদের আটকে থাকা প্যাটার্ন বুঝতে এবং তার নিচে থাকা বন্ধন পুনর্গঠন করতে সাহায্য করতে এসেছি — সিবিটি, ডিবিটি, লাইফ কোচিং এবং কাঠামোবদ্ধ মাইন্ড ট্রেনিং থেকে নেওয়া কৌশল দিয়ে, যা প্রতিটি পরিবারের নিজস্ব ছন্দের সাথে মানানসই।"
+      },
+      {
+        "en": "I work with families across Dhaka and online, and every session is guided by the same principle my research started with: behaviour is communication, and connection is the intervention.",
+        "bn": "আমি ঢাকা জুড়ে এবং অনলাইনে পরিবারগুলোর সাথে কাজ করি, এবং প্রতিটি সেশন সেই একই নীতির ওপর ভিত্তি করে পরিচালিত হয় যা দিয়ে আমার গবেষণা শুরু হয়েছিল — আচরণ হলো যোগাযোগ, আর সংযোগই হলো সমাধান।"
+      }
+    ],
+    "philosophyHeading": {
+      "en": "How I approach this work",
+      "bn": "আমি যেভাবে এই কাজে এগোই"
+    },
+    "philosophy": [
+      {
+        "icon": "Ear",
+        "title": {
+          "en": "Listen before advising",
+          "bn": "পরামর্শের আগে শোনা"
+        },
+        "description": {
+          "en": "Every family's story is heard fully before any plan is suggested.",
+          "bn": "কোনো পরিকল্পনা প্রস্তাব করার আগে প্রতিটি পরিবারের গল্প সম্পূর্ণভাবে শোনা হয়।"
+        }
+      },
+      {
+        "icon": "ScrollText",
+        "title": {
+          "en": "Ground it in evidence",
+          "bn": "প্রমাণের ভিত্তিতে কাজ"
+        },
+        "description": {
+          "en": "Methods are drawn from CBT, DBT, and established coaching frameworks — not trends.",
+          "bn": "পদ্ধতিগুলো সিবিটি, ডিবিটি এবং প্রতিষ্ঠিত কোচিং কাঠামো থেকে নেওয়া — কোনো সাময়িক প্রবণতা থেকে নয়।"
+        }
+      },
+      {
+        "icon": "ShieldCheck",
+        "title": {
+          "en": "No judgement, ever",
+          "bn": "কখনোই বিচার নয়"
+        },
+        "description": {
+          "en": "Parents are doing their best with the tools they have. This work adds to that, not criticises it.",
+          "bn": "অভিভাবকরা তাদের হাতে থাকা সরঞ্জাম দিয়ে যথাসাধ্য চেষ্টা করছেন। এই কাজ সেটিকে বাড়ায়, সমালোচনা করে না।"
+        }
+      }
+    ]
+  },
+  "credentialsPage": {
+    "eyebrow": {
+      "en": "Credentials",
+      "bn": "সনদপত্র"
+    },
+    "heading": {
+      "en": "Training behind every session",
+      "bn": "প্রতিটি সেশনের পেছনে থাকা প্রশিক্ষণ"
+    },
+    "intro": {
+      "en": "A verified overview of academic grounding, professional certifications, and ongoing development.",
+      "bn": "একাডেমিক ভিত্তি, পেশাদার সনদপত্র এবং চলমান দক্ষতা উন্নয়নের একটি যাচাইকৃত সংক্ষিপ্ত বিবরণ।"
+    },
+    "timeline": [
+      {
+        "type": {
+          "en": "Academic Degree",
+          "bn": "একাডেমিক ডিগ্রি"
+        },
+        "title": {
+          "en": "MSS in Applied Criminology & Police Management",
+          "bn": "এমএসএস ইন অ্যাপ্লায়েড ক্রিমিনোলজি অ্যান্ড পুলিশ ম্যানেজমেন্ট"
+        },
+        "institution": {
+          "en": "Police Staff College, Bangladesh — research focus: family bonding, parental attachment, and youth behavioural patterns",
+          "bn": "পুলিশ স্টাফ কলেজ, বাংলাদেশ — গবেষণার বিষয়: পারিবারিক বন্ধন, অভিভাবক সংযুক্তি এবং কিশোর আচরণের প্যাটার্ন"
+        }
+      },
+      {
+        "type": {
+          "en": "Diploma",
+          "bn": "ডিপ্লোমা"
+        },
+        "title": {
+          "en": "Diploma in Life Coaching, Relationship & Mental Health",
+          "bn": "লাইফ কোচিং, রিলেশনশিপ ও মেন্টাল হেলথ ডিপ্লোমা"
+        },
+        "institution": {
+          "en": "Emo Care",
+          "bn": "ইমো কেয়ার"
+        }
+      },
+      {
+        "type": {
+          "en": "Clinical Training",
+          "bn": "ক্লিনিক্যাল প্রশিক্ষণ"
+        },
+        "title": {
+          "en": "CBT & DBT Training",
+          "bn": "সিবিটি ও ডিবিটি প্রশিক্ষণ"
+        },
+        "institution": {
+          "en": "20 Minutes Medical",
+          "bn": "২০ মিনিটস মেডিকেল"
+        }
+      },
+      {
+        "type": {
+          "en": "Diploma",
+          "bn": "ডিপ্লোমা"
+        },
+        "title": {
+          "en": "Child & Parents Counselling Diploma",
+          "bn": "চাইল্ড অ্যান্ড প্যারেন্টস কাউন্সেলিং ডিপ্লোমা"
+        },
+        "institution": {
+          "en": "IIMTC",
+          "bn": "আইআইএমটিসি"
+        }
+      },
+      {
+        "type": {
+          "en": "Professional Certificate",
+          "bn": "পেশাদার সনদ"
+        },
+        "title": {
+          "en": "Professional Certificate in School Counselling & Career Guidance",
+          "bn": "স্কুল কাউন্সেলিং ও ক্যারিয়ার গাইডেন্সে পেশাদার সনদ"
+        },
+        "institution": {
+          "en": "Next You Career Institute",
+          "bn": "নেক্সট ইউ ক্যারিয়ার ইনস্টিটিউট"
+        }
+      },
+      {
+        "type": {
+          "en": "Specialized Training",
+          "bn": "বিশেষায়িত প্রশিক্ষণ"
+        },
+        "title": {
+          "en": "Mind Training",
+          "bn": "মাইন্ড ট্রেনিং"
+        },
+        "institution": {
+          "en": "Under the supervision of an international mind trainer",
+          "bn": "একজন আন্তর্জাতিক মাইন্ড ট্রেইনারের তত্ত্বাবধানে"
+        }
+      }
+    ],
+    "ongoingHeading": {
+      "en": "Ongoing development",
+      "bn": "চলমান উন্নয়ন"
+    },
+    "ongoing": {
+      "en": "Training in child and family psychology is continually evolving, and this practice stays current through regular workshops, supervision, and continued study.",
+      "bn": "শিশু ও পারিবারিক মনোবিজ্ঞানে প্রশিক্ষণ ক্রমাগত পরিবর্তিত হচ্ছে, এবং নিয়মিত কর্মশালা, তত্ত্বাবধান ও চলমান পড়াশোনার মাধ্যমে এই চর্চা হালনাগাদ রাখা হয়।"
+    }
+  },
+  "quiz": {
+    "title": {
+      "en": "Parent Readiness Check",
+      "bn": "প্যারেন্ট রেডিনেস চেক"
+    },
+    "intro": {
+      "en": "Four quick questions about what you're noticing at home. Your answers stay private and are not stored anywhere.",
+      "bn": "বাড়িতে যা লক্ষ্য করছেন তা নিয়ে চারটি সংক্ষিপ্ত প্রশ্ন। আপনার উত্তর সম্পূর্ণ ব্যক্তিগত থাকবে এবং কোথাও সংরক্ষণ করা হয় না।"
+    },
+    "stepLabel": {
+      "en": "Step",
+      "bn": "ধাপ"
+    },
+    "ofLabel": {
+      "en": "of",
+      "bn": "এর মধ্যে"
+    },
+    "nextLabel": {
+      "en": "Next",
+      "bn": "পরবর্তী"
+    },
+    "backLabel": {
+      "en": "Back",
+      "bn": "পেছনে"
+    },
+    "seeResultsLabel": {
+      "en": "See my results",
+      "bn": "ফলাফল দেখুন"
+    },
+    "restartLabel": {
+      "en": "Start over",
+      "bn": "আবার শুরু করুন"
+    },
+    "steps": [
+      {
+        "id": "shifts",
+        "question": {
+          "en": "What shifts have you observed recently?",
+          "bn": "সম্প্রতি কী কী পরিবর্তন লক্ষ্য করেছেন?"
+        },
+        "helper": {
+          "en": "Choose the option that fits best.",
+          "bn": "যে অপশনটি সবচেয়ে বেশি মানানসই তা বেছে নিন।"
+        },
+        "options": [
+          {
+            "id": "none",
+            "label": {
+              "en": "Nothing major — just checking in",
+              "bn": "বড় কিছু নয় — শুধু খোঁজ নিচ্ছি"
+            },
+            "weight": 0
+          },
+          {
+            "id": "mild",
+            "label": {
+              "en": "Occasional mood changes or friction",
+              "bn": "মাঝে মাঝে মেজাজ পরিবর্তন বা ঘর্ষণ"
+            },
+            "weight": 1
+          },
+          {
+            "id": "moderate",
+            "label": {
+              "en": "Sudden withdrawal or growing academic drop",
+              "bn": "হঠাৎ নিজেকে গুটিয়ে নেওয়া বা পড়াশোনায় ঘাটতি বাড়া"
+            },
+            "weight": 2
+          },
+          {
+            "id": "severe",
+            "label": {
+              "en": "Frequent anger, defiance, and daily friction",
+              "bn": "ঘন ঘন রাগ, অবাধ্যতা ও প্রতিদিনের ঘর্ষণ"
+            },
+            "weight": 3
+          }
+        ]
+      },
+      {
+        "id": "communication",
+        "question": {
+          "en": "How would you describe communication at home right now?",
+          "bn": "এখন বাড়িতে যোগাযোগের অবস্থা কেমন বলবেন?"
+        },
+        "helper": {
+          "en": "Choose the option that fits best.",
+          "bn": "যে অপশনটি সবচেয়ে বেশি মানানসই তা বেছে নিন।"
+        },
+        "options": [
+          {
+            "id": "healthy",
+            "label": {
+              "en": "Generally open, with normal ups and downs",
+              "bn": "মোটামুটি খোলামেলা, স্বাভাবিক উত্থান-পতনসহ"
+            },
+            "weight": 0
+          },
+          {
+            "id": "strained",
+            "label": {
+              "en": "Getting harder, more short tempers",
+              "bn": "কঠিন হয়ে উঠছে, মেজাজ দ্রুত হারানো"
+            },
+            "weight": 1
+          },
+          {
+            "id": "difficult",
+            "label": {
+              "en": "Conversations often turn to yelling",
+              "bn": "কথোপকথন প্রায়ই চিৎকারে পরিণত হয়"
+            },
+            "weight": 2
+          },
+          {
+            "id": "broken",
+            "label": {
+              "en": "Daily yelling, silence, or inability to set any rules",
+              "bn": "প্রতিদিন চিৎকার, নীরবতা, বা কোনো নিয়ম স্থির করতে না পারা"
+            },
+            "weight": 3
+          }
+        ]
+      },
+      {
+        "id": "academics",
+        "question": {
+          "en": "How is their academic and motivation state?",
+          "bn": "পড়াশোনা ও আগ্রহের অবস্থা কেমন?"
+        },
+        "helper": {
+          "en": "Choose the option that fits best.",
+          "bn": "যে অপশনটি সবচেয়ে বেশি মানানসই তা বেছে নিন।"
+        },
+        "options": [
+          {
+            "id": "stable",
+            "label": {
+              "en": "Stable, no major concerns",
+              "bn": "স্থিতিশীল, বড় কোনো উদ্বেগ নেই"
+            },
+            "weight": 0
+          },
+          {
+            "id": "dip",
+            "label": {
+              "en": "A mild dip in focus or interest",
+              "bn": "মনোযোগ বা আগ্রহে সামান্য ঘাটতি"
+            },
+            "weight": 1
+          },
+          {
+            "id": "loss",
+            "label": {
+              "en": "Sudden loss of interest in subjects they once liked",
+              "bn": "আগে পছন্দের বিষয়ে হঠাৎ আগ্রহ হারানো"
+            },
+            "weight": 2
+          },
+          {
+            "id": "distress",
+            "label": {
+              "en": "Severe exam distress or panic",
+              "bn": "পরীক্ষা নিয়ে তীব্র উদ্বেগ বা আতঙ্ক"
+            },
+            "weight": 3
+          }
+        ]
+      },
+      {
+        "id": "fatigue",
+        "question": {
+          "en": "How are you holding up as a parent right now?",
+          "bn": "একজন অভিভাবক হিসেবে আপনি এখন কেমন সামলাচ্ছেন?"
+        },
+        "helper": {
+          "en": "Choose the option that fits best.",
+          "bn": "যে অপশনটি সবচেয়ে বেশি মানানসই তা বেছে নিন।"
+        },
+        "options": [
+          {
+            "id": "fine",
+            "label": {
+              "en": "Managing fine, mostly confident",
+              "bn": "ভালোভাবেই সামলাচ্ছি, বেশ আত্মবিশ্বাসী"
+            },
+            "weight": 0
+          },
+          {
+            "id": "tired",
+            "label": {
+              "en": "Tired, but coping",
+              "bn": "ক্লান্ত, তবে সামলে নিচ্ছি"
+            },
+            "weight": 1
+          },
+          {
+            "id": "unsure",
+            "label": {
+              "en": "Second-guessing every reaction",
+              "bn": "প্রতিটি প্রতিক্রিয়া নিয়ে দ্বিধায় থাকা"
+            },
+            "weight": 2
+          },
+          {
+            "id": "overwhelmed",
+            "label": {
+              "en": "Completely overwhelmed, need structured support",
+              "bn": "সম্পূর্ণভাবে ক্লান্ত, কাঠামোবদ্ধ সহায়তা প্রয়োজন"
+            },
+            "weight": 3
+          }
+        ]
+      }
+    ],
+    "results": {
+      "low": {
+        "title": {
+          "en": "You're in a steady place",
+          "bn": "আপনি একটি স্থিতিশীল অবস্থানে আছেন"
+        },
+        "description": {
+          "en": "What you're describing sounds like normal ups and downs rather than a pattern to worry about. A little preventive guidance now can help keep things this way.",
+          "bn": "আপনি যা বর্ণনা করছেন তা উদ্বেগের কোনো প্যাটার্নের চেয়ে স্বাভাবিক উত্থান-পতনের মতো শোনাচ্ছে। এখন সামান্য প্রতিরোধমূলক দিকনির্দেশনা বিষয়গুলো এভাবে বজায় রাখতে সাহায্য করতে পারে।"
+        },
+        "action": {
+          "en": "download",
+          "bn": "download"
+        }
+      },
+      "moderate": {
+        "title": {
+          "en": "Worth keeping an eye on",
+          "bn": "নজরে রাখার মতো বিষয়"
+        },
+        "description": {
+          "en": "A few patterns are starting to settle in. This is a good time for some structured, preventive parenting tools before things become harder to shift.",
+          "bn": "কিছু প্যাটার্ন স্থায়ী হতে শুরু করেছে। বিষয়গুলো কঠিন হয়ে ওঠার আগে কিছু কাঠামোবদ্ধ, প্রতিরোধমূলক প্যারেন্টিং কৌশল নেওয়ার এটি ভালো সময়।"
+        },
+        "action": {
+          "en": "download",
+          "bn": "download"
+        }
+      },
+      "elevated": {
+        "title": {
+          "en": "This deserves a real conversation",
+          "bn": "এটি একটি প্রকৃত কথোপকথনের দাবি রাখে"
+        },
+        "description": {
+          "en": "What you're describing has settled into a consistent pattern. It would help to talk this through properly rather than trying to manage it alone.",
+          "bn": "আপনি যা বর্ণনা করছেন তা একটি ধারাবাহিক প্যাটার্নে পরিণত হয়েছে। একা সামলানোর চেষ্টা করার চেয়ে এটি নিয়ে সঠিকভাবে কথা বলা ভালো হবে।"
+        },
+        "action": {
+          "en": "whatsapp",
+          "bn": "whatsapp"
+        }
+      },
+      "urgent": {
+        "title": {
+          "en": "Please don't carry this alone",
+          "bn": "এটি একা বহন করবেন না"
+        },
+        "description": {
+          "en": "What you're describing sounds heavy, for your child and for you. Reaching out now — even just to talk — is a reasonable and caring next step.",
+          "bn": "আপনি যা বর্ণনা করছেন তা আপনার সন্তান ও আপনার জন্য বেশ ভারী শোনাচ্ছে। এখনই যোগাযোগ করা — এমনকি শুধু কথা বলার জন্যও — একটি যুক্তিসঙ্গত ও যত্নশীল পরবর্তী পদক্ষেপ।"
+        },
+        "action": {
+          "en": "whatsapp",
+          "bn": "whatsapp"
+        }
+      },
+      "whatsappMessage": "Hello Shammy, I completed your Parent Quiz regarding my child and would like to discuss a consultation.",
+      "whatsappLabel": {
+        "en": "Message Shammy on WhatsApp",
+        "bn": "হোয়াটসঅ্যাপে শামীকে মেসেজ করুন"
+      },
+      "bookLabel": {
+        "en": "Or book a consultation directly",
+        "bn": "অথবা সরাসরি পরামর্শ বুক করুন"
+      },
+      "downloadLabelEn": {
+        "en": "Download the Guide (English)",
+        "bn": "গাইড ডাউনলোড করুন (ইংরেজি)"
+      },
+      "downloadLabelBn": {
+        "en": "Download the Guide (Bangla)",
+        "bn": "গাইড ডাউনলোড করুন (বাংলা)"
+      }
+    }
+  },
+  "faqPage": {
+    "eyebrow": {
+      "en": "FAQ",
+      "bn": "সচরাচর জিজ্ঞাসা"
+    },
+    "heading": {
+      "en": "Questions parents ask before their first session",
+      "bn": "প্রথম সেশনের আগে অভিভাবকরা যা জানতে চান"
+    },
+    "categories": [
+      {
+        "title": {
+          "en": "Getting started",
+          "bn": "শুরু করা"
+        },
+        "items": [
+          {
+            "q": {
+              "en": "How do I know if my family needs counselling?",
+              "bn": "কীভাবে বুঝব আমার পরিবারের কাউন্সেলিং দরকার?"
+            },
+            "a": {
+              "en": "If daily conflict, withdrawal, or academic struggles have become a consistent pattern rather than an occasional bad week, it's worth having a conversation. The Parent Readiness Check on this site can also help you get a clearer read on where things stand.",
+              "bn": "প্রতিদিনের দ্বন্দ্ব, নিজেকে গুটিয়ে নেওয়া, বা পড়াশোনার সমস্যা যদি মাঝেমধ্যে খারাপ সপ্তাহের বদলে একটি ধারাবাহিক প্যাটার্নে পরিণত হয়ে থাকে, তাহলে কথা বলা মূল্যবান। এই সাইটে থাকা প্যারেন্ট রেডিনেস চেক আপনাকে পরিস্থিতি আরও স্পষ্টভাবে বুঝতে সাহায্য করতে পারে।"
+            }
+          },
+          {
+            "q": {
+              "en": "What happens in the first session?",
+              "bn": "প্রথম সেশনে কী হয়?"
+            },
+            "a": {
+              "en": "The first session is mostly listening — understanding your family's situation, history, and what you're hoping to get out of counselling. There's no pressure to have everything figured out beforehand.",
+              "bn": "প্রথম সেশনে মূলত শোনা হয় — আপনার পরিবারের পরিস্থিতি, ইতিহাস এবং আপনি কাউন্সেলিং থেকে কী পেতে চান তা বোঝা। আগে থেকে সবকিছু গুছিয়ে নেওয়ার কোনো চাপ নেই।"
+            }
+          },
+          {
+            "q": {
+              "en": "Do you work with the child alone, or with parents too?",
+              "bn": "আপনি কি শুধু শিশুর সাথে কাজ করেন, নাকি অভিভাবকদের সাথেও?"
+            },
+            "a": {
+              "en": "It depends on the situation. Many cases involve a mix of individual sessions with the child or teen and joint sessions with parents, since lasting change usually needs both sides involved.",
+              "bn": "এটি পরিস্থিতির ওপর নির্ভর করে। বেশিরভাগ ক্ষেত্রে শিশু বা কিশোরের সাথে একক সেশন এবং অভিভাবকদের সাথে যৌথ সেশনের মিশ্রণ থাকে, কারণ টেকসই পরিবর্তনের জন্য সাধারণত উভয় পক্ষের সম্পৃক্ততা প্রয়োজন।"
+            }
+          }
+        ]
+      },
+      {
+        "title": {
+          "en": "Session format & logistics",
+          "bn": "সেশনের ধরন ও পরিকল্পনা"
+        },
+        "items": [
+          {
+            "q": {
+              "en": "Do you offer both in-person and online sessions?",
+              "bn": "আপনি কি সরাসরি ও অনলাইন উভয় সেশন দেন?"
+            },
+            "a": {
+              "en": "Yes. In-person sessions are available in Dhaka, and online sessions run over video call for families anywhere else, or for those who prefer the flexibility.",
+              "bn": "হ্যাঁ। ঢাকায় সরাসরি সেশনের ব্যবস্থা আছে, এবং অন্যত্র থাকা পরিবার বা যারা সুবিধা চান তাদের জন্য অনলাইন সেশন ভিডিও কলে হয়।"
+            }
+          },
+          {
+            "q": {
+              "en": "How long does a typical engagement last?",
+              "bn": "একটি সাধারণ সহায়তা প্রক্রিয়া কতদিন চলে?"
+            },
+            "a": {
+              "en": "It varies by family. Some see meaningful shifts within a handful of sessions, while more established patterns take longer. This is discussed openly as part of the plan.",
+              "bn": "এটি পরিবারভেদে ভিন্ন হয়। কিছু পরিবার কয়েকটি সেশনের মধ্যেই উল্লেখযোগ্য পরিবর্তন দেখে, আর বেশি প্রতিষ্ঠিত প্যাটার্নের ক্ষেত্রে সময় বেশি লাগে। এটি পরিকল্পনার অংশ হিসেবে খোলাখুলি আলোচনা করা হয়।"
+            }
+          },
+          {
+            "q": {
+              "en": "What age range do you work with?",
+              "bn": "আপনি কোন বয়সের শিশুদের সাথে কাজ করেন?"
+            },
+            "a": {
+              "en": "Sessions cover young children through to older teenagers, with the approach adapted to fit the child's age and developmental stage.",
+              "bn": "ছোট শিশু থেকে শুরু করে বড় কিশোর পর্যন্ত সেশন দেওয়া হয়, শিশুর বয়স ও বিকাশ পর্যায় অনুযায়ী পদ্ধতি সমন্বয় করে।"
+            }
+          }
+        ]
+      },
+      {
+        "title": {
+          "en": "Privacy & trust",
+          "bn": "গোপনীয়তা ও আস্থা"
+        },
+        "items": [
+          {
+            "q": {
+              "en": "Is what my child says kept confidential from me?",
+              "bn": "আমার সন্তান যা বলে তা কি আমার কাছ থেকেও গোপন রাখা হয়?"
+            },
+            "a": {
+              "en": "Teenagers in particular are given a level of privacy to speak honestly, with clear boundaries agreed upfront about what safety-related information will always be shared with parents.",
+              "bn": "বিশেষ করে কিশোরদের খোলাখুলি কথা বলার জন্য কিছুটা গোপনীয়তা দেওয়া হয়, তবে নিরাপত্তা-সংক্রান্ত কোনো তথ্য সবসময় অভিভাবকদের সাথে শেয়ার করা হবে তা আগে থেকেই স্পষ্টভাবে ঠিক করা থাকে।"
+            }
+          },
+          {
+            "q": {
+              "en": "Is my family's information kept private?",
+              "bn": "আমার পরিবারের তথ্য কি গোপন রাখা হয়?"
+            },
+            "a": {
+              "en": "Yes. Session details and personal information are treated as confidential and are never shared without consent, except where required to protect someone's safety.",
+              "bn": "হ্যাঁ। সেশনের বিবরণ ও ব্যক্তিগত তথ্য গোপনীয় হিসেবে বিবেচনা করা হয় এবং কারো নিরাপত্তা রক্ষার প্রয়োজন ছাড়া কখনো সম্মতি ব্যতীত শেয়ার করা হয় না।"
+            }
+          }
+        ]
+      },
+      {
+        "title": {
+          "en": "Scope of care",
+          "bn": "সেবার সীমা"
+        },
+        "items": [
+          {
+            "q": {
+              "en": "Is this a substitute for psychiatric care?",
+              "bn": "এটি কি মানসিক চিকিৎসার বিকল্প?"
+            },
+            "a": {
+              "en": "No. This is a counselling and guidance practice, not an emergency psychiatric or medical service. If a child is in acute crisis or at risk of self-harm, please seek emergency medical help immediately.",
+              "bn": "না। এটি একটি কাউন্সেলিং ও গাইডেন্স সেবা, কোনো জরুরি মানসিক বা চিকিৎসা সেবা নয়। কোনো শিশু তীব্র সংকটে থাকলে বা আত্মক্ষতির ঝুঁকিতে থাকলে অনুগ্রহ করে অবিলম্বে জরুরি চিকিৎসা সহায়তা নিন।"
+            }
+          },
+          {
+            "q": {
+              "en": "Is DMIT a medical or IQ test?",
+              "bn": "ডিএমআইটি কি কোনো চিকিৎসা বা আইকিউ পরীক্ষা?"
+            },
+            "a": {
+              "en": "No. DMIT is an exploratory tool for learning-style and sensory preference, not a medical, diagnostic, or intelligence test. See the DMIT Assessment page for a full explanation.",
+              "bn": "না। ডিএমআইটি শেখার ধরন ও সংবেদনশীল পছন্দ অন্বেষণের একটি টুল, কোনো চিকিৎসা, রোগ নির্ণয় বা বুদ্ধিমত্তা পরীক্ষা নয়। বিস্তারিত জানতে ডিএমআইটি অ্যাসেসমেন্ট পাতাটি দেখুন।"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "contactPage": {
+    "eyebrow": {
+      "en": "Contact",
+      "bn": "যোগাযোগ"
+    },
+    "heading": {
+      "en": "Let's talk about your family",
+      "bn": "আপনার পরিবার নিয়ে কথা বলা যাক"
+    },
+    "intro": {
+      "en": "Fill in the form below, message on WhatsApp, or call directly. A response usually comes within one business day.",
+      "bn": "নিচের ফর্মটি পূরণ করুন, হোয়াটসঅ্যাপে মেসেজ করুন, বা সরাসরি কল করুন। সাধারণত এক কার্যদিবসের মধ্যে উত্তর পাওয়া যায়।"
+    },
+    "clinicHeading": {
+      "en": "In-person, Dhaka",
+      "bn": "সরাসরি, ঢাকা"
+    },
+    "clinicHours": {
+      "en": "By appointment, Saturday to Thursday",
+      "bn": "অ্যাপয়েন্টমেন্ট অনুযায়ী, শনিবার থেকে বৃহস্পতিবার"
+    },
+    "onlineHeading": {
+      "en": "Online consultations",
+      "bn": "অনলাইন পরামর্শ"
+    },
+    "onlineDescription": {
+      "en": "Sessions run over Zoom for families outside Dhaka or anyone who prefers meeting from home.",
+      "bn": "ঢাকার বাইরের পরিবার বা বাড়ি থেকে সেশন করতে চান এমন যে কারো জন্য জুমে সেশন হয়।"
+    },
+    "crisisHeading": {
+      "en": "In a crisis right now?",
+      "bn": "এই মুহূর্তে সংকটে আছেন?"
+    },
+    "crisisBody": {
+      "en": "This practice is not equipped for emergency psychiatric care. If your child is at immediate risk of self-harm or in acute crisis, please go to your nearest hospital emergency department or contact a crisis helpline right away.",
+      "bn": "এই সেবা জরুরি মানসিক চিকিৎসার জন্য উপযুক্ত নয়। আপনার সন্তান যদি তাৎক্ষণিক আত্মক্ষতির ঝুঁকিতে থাকে বা তীব্র সংকটে থাকে, অনুগ্রহ করে দ্রুত নিকটস্থ হাসপাতালের জরুরি বিভাগে যান বা একটি ক্রাইসিস হেল্পলাইনে যোগাযোগ করুন।"
+    },
+    "form": {
+      "heading": {
+        "en": "Send a booking request",
+        "bn": "বুকিং অনুরোধ পাঠান"
+      },
+      "nameLabel": {
+        "en": "Parent / Guardian name",
+        "bn": "অভিভাবকের নাম"
+      },
+      "namePlaceholder": {
+        "en": "Your full name",
+        "bn": "আপনার পূর্ণ নাম"
+      },
+      "ageLabel": {
+        "en": "Child's age bracket",
+        "bn": "সন্তানের বয়সসীমা"
+      },
+      "ageOptions": [
+        {
+          "en": "Under 6",
+          "bn": "৬ বছরের নিচে"
+        },
+        {
+          "en": "6–9 years",
+          "bn": "৬–৯ বছর"
+        },
+        {
+          "en": "10–13 years",
+          "bn": "১০–১৩ বছর"
+        },
+        {
+          "en": "14–17 years",
+          "bn": "১৪–১৭ বছর"
+        },
+        {
+          "en": "18+ (Mental Health Counselling)",
+          "bn": "১৮+ (মেন্টাল হেলথ কাউন্সেলিং)"
+        }
+      ],
+      "phoneLabel": {
+        "en": "WhatsApp / Phone number",
+        "bn": "হোয়াটসঅ্যাপ / ফোন নম্বর"
+      },
+      "phonePlaceholder": {
+        "en": "01XXXXXXXXX",
+        "bn": "01XXXXXXXXX"
+      },
+      "modeLabel": {
+        "en": "Consultation preference",
+        "bn": "পরামর্শের ধরন"
+      },
+      "modeOptions": [
+        {
+          "en": "In-person (Dhaka)",
+          "bn": "সরাসরি (ঢাকা)"
+        },
+        {
+          "en": "Online (Zoom)",
+          "bn": "অনলাইন (জুম)"
+        }
+      ],
+      "topicLabel": {
+        "en": "What would you like to discuss?",
+        "bn": "আপনি কী নিয়ে কথা বলতে চান?"
+      },
+      "topicOptions": [
+        {
+          "en": "Parenting challenges",
+          "bn": "প্যারেন্টিং চ্যালেঞ্জ"
+        },
+        {
+          "en": "Child emotion / behaviour",
+          "bn": "সন্তানের আবেগ / আচরণ"
+        },
+        {
+          "en": "Career guidance",
+          "bn": "ক্যারিয়ার গাইডেন্স"
+        },
+        {
+          "en": "General guidance",
+          "bn": "সাধারণ গাইডেন্স"
+        }
+      ],
+      "noteLabel": {
+        "en": "Anything you'd like to add (optional)",
+        "bn": "আরও কিছু যোগ করতে চান? (ঐচ্ছিক)"
+      },
+      "notePlaceholder": {
+        "en": "Share as much or as little as feels comfortable.",
+        "bn": "যতটুকু স্বাচ্ছন্দ্যবোধ করেন ততটুকুই লিখুন।"
+      },
+      "submitLabel": {
+        "en": "Send via WhatsApp",
+        "bn": "হোয়াটসঅ্যাপের মাধ্যমে পাঠান"
+      },
+      "privacyNote": {
+        "en": "Submitting opens WhatsApp with your details pre-filled. Nothing is stored on this site.",
+        "bn": "সাবমিট করলে আপনার তথ্যসহ হোয়াটসঅ্যাপ খুলবে। এই সাইটে কিছু সংরক্ষণ করা হয় না।"
+      },
+      "ageAdultNote": {
+        "en": "For clients aged 18 and above, sessions are provided under general mental health counselling rather than child counselling.",
+        "bn": "১৮ বা তার বেশি বয়সীদের জন্য সেশন শিশু কাউন্সেলিংয়ের বদলে সাধারণ মেন্টাল হেলথ কাউন্সেলিংয়ের আওতায় প্রদান করা হয়।"
+      }
+    }
+  },
+  "common": {
+    "readMore": {
+      "en": "Learn more",
+      "bn": "আরও জানুন"
+    },
+    "bookConsultation": {
+      "en": "Book a Consultation",
+      "bn": "পরামর্শ বুক করুন"
+    },
+    "whatsapp": {
+      "en": "WhatsApp",
+      "bn": "হোয়াটসঅ্যাপ"
+    },
+    "backToServices": {
+      "en": "All services",
+      "bn": "সকল সেবা"
+    },
+    "bookNow": {
+      "en": "Book Now",
+      "bn": "বুক করুন"
+    }
+  }
+}
