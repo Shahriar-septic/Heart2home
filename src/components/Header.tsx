@@ -54,25 +54,27 @@ export default function Header() {
         className="h-[2.5px] w-full bg-gradient-to-r from-rose-500 via-teal-400 via-indigo-500 to-rose-500 bg-[length:200%_100%] animate-shimmer-flow opacity-90"
       />
 
-      <div className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-2.5 sm:px-6 sm:py-3">
-        {/* Heart2Home Brand with Animated Beating Indicator */}
-        <Link href="/" className="group flex flex-col leading-tight shrink-0">
-          <span className="flex items-center gap-1.5 font-display text-xl font-bold tracking-tight sm:text-2xl">
-            <span className="text-rose-600 transition-colors group-hover:text-rose-700">Heart</span>
-            <span className="text-teal-600">2</span>
-            <span className="text-slate-900">Home</span>
-            <span className="relative ml-0.5 flex h-2.5 w-2.5 items-center justify-center">
-              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-rose-400 opacity-75" />
-              <span className="relative inline-flex h-2 w-2 rounded-full bg-rose-500 animate-heartbeat shadow-sm" />
+      <div className="w-full flex items-center justify-between lg:grid lg:grid-cols-[1fr_auto_1fr] px-4 sm:px-6 lg:px-8 xl:px-12 py-2.5 sm:py-3">
+        {/* 1. Hard Left Edge: Heart2Home Brand */}
+        <div className="flex items-center justify-start min-w-0">
+          <Link href="/" className="group flex flex-col leading-tight shrink-0">
+            <span className="flex items-center gap-1.5 font-display text-xl font-bold tracking-tight sm:text-2xl">
+              <span className="text-rose-600 transition-colors group-hover:text-rose-700">Heart</span>
+              <span className="text-teal-600">2</span>
+              <span className="text-slate-900">Home</span>
+              <span className="relative ml-0.5 flex h-2.5 w-2.5 items-center justify-center">
+                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-rose-400 opacity-75" />
+                <span className="relative inline-flex h-2 w-2 rounded-full bg-rose-500 animate-heartbeat shadow-sm" />
+              </span>
             </span>
-          </span>
-          <span className="hidden text-[11px] font-medium text-slate-600 sm:block">
-            {lang === "en" ? "Child & Family Guidance • Shammy Akhter" : "শিশু ও পারিবারিক কাউন্সেলিং • শামী আক্তার"}
-          </span>
-        </Link>
+            <span className="hidden text-[11px] font-medium text-slate-600 sm:block">
+              {lang === "en" ? "Child & Family Guidance • Shammy Akhter" : "শিশু ও পারিবারিক কাউন্সেলিং • শামী আক্তার"}
+            </span>
+          </Link>
+        </div>
 
-        {/* Desktop Navigation */}
-        <nav className="hidden items-center gap-1 lg:flex" aria-label="Primary">
+        {/* 2. Middle: Desktop Navigation Links Centered Mathematically */}
+        <nav className="hidden items-center justify-center gap-1 xl:gap-1.5 lg:flex whitespace-nowrap" aria-label="Primary">
           {links.map((link) => {
             const isActive =
               link.href === "/"
@@ -86,7 +88,7 @@ export default function Header() {
                   onClick={() => setServicesOpen((v) => !v)}
                   aria-expanded={servicesOpen}
                   aria-haspopup="true"
-                  className={`flex items-center gap-1 rounded-full px-3.5 py-2 text-sm font-medium transition duration-200 ${
+                  className={`flex items-center gap-1 rounded-full px-2.5 xl:px-3.5 py-2 text-xs xl:text-sm font-medium transition duration-200 ${
                     isActive || servicesOpen
                       ? "bg-rose-50/90 text-rose-700 font-bold shadow-sm border border-rose-200/60"
                       : "text-slate-700 hover:bg-white/70 hover:text-rose-600"
@@ -102,7 +104,7 @@ export default function Header() {
                 </button>
 
                 {servicesOpen && (
-                  <div className="absolute left-0 top-full mt-2 w-72 overflow-hidden rounded-2xl border border-white/70 bg-white/80 p-2 shadow-2xl backdrop-blur-2xl backdrop-saturate-200 ring-1 ring-black/5 animate-fade-up">
+                  <div className="absolute left-1/2 -translate-x-1/2 top-full mt-2 w-72 overflow-hidden rounded-2xl border border-white/70 bg-white/80 p-2 shadow-2xl backdrop-blur-2xl backdrop-saturate-200 ring-1 ring-black/5 animate-fade-up">
                     <Link
                       href="/services"
                       className="flex items-center justify-between rounded-xl px-3.5 py-2.5 text-sm font-bold text-rose-600 transition hover:bg-rose-50/80"
@@ -130,7 +132,7 @@ export default function Header() {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`rounded-full px-3.5 py-2 text-sm font-medium transition duration-200 ${
+                className={`rounded-full px-2.5 xl:px-3.5 py-2 text-xs xl:text-sm font-medium transition duration-200 ${
                   isActive
                     ? "bg-rose-50/90 text-rose-700 font-bold shadow-sm border border-rose-200/60"
                     : "text-slate-700 hover:bg-white/70 hover:text-rose-600"
@@ -142,14 +144,14 @@ export default function Header() {
           })}
         </nav>
 
-        {/* Right Actions */}
-        <div className="flex items-center gap-2 sm:gap-2.5 shrink-0">
+        {/* 3. Hard Right Edge: Action Buttons */}
+        <div className="flex items-center justify-end gap-2 sm:gap-2.5 shrink-0">
           <a
             href={content.site.facebook}
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Heart2Home on Facebook"
-            className="hidden h-9 w-9 items-center justify-center rounded-full border border-white/70 bg-white/60 text-slate-700 shadow-sm backdrop-blur-md transition hover:bg-white hover:text-rose-600 sm:flex"
+            className="hidden h-9 w-9 items-center justify-center rounded-full border border-white/70 bg-white/60 text-slate-700 shadow-sm backdrop-blur-md transition hover:bg-white hover:text-rose-600 xl:flex"
           >
             <Facebook size={15} />
           </a>
@@ -157,7 +159,7 @@ export default function Header() {
           <button
             type="button"
             onClick={toggleLang}
-            className="flex min-h-[40px] items-center justify-center rounded-full border border-white/70 bg-white/60 px-3.5 py-1.5 text-xs font-bold tracking-wide text-slate-800 shadow-sm backdrop-blur-md transition active:scale-95 hover:bg-white hover:text-rose-600 sm:px-4 sm:text-sm shrink-0"
+            className="flex min-h-[38px] sm:min-h-[40px] items-center justify-center rounded-full border border-white/70 bg-white/60 px-3 py-1.5 text-xs font-bold tracking-wide text-slate-800 shadow-sm backdrop-blur-md transition active:scale-95 hover:bg-white hover:text-rose-600 sm:px-3.5 sm:text-sm shrink-0"
             aria-label="Toggle language"
           >
             {lang === "en" ? "বাংলা" : "English"}
@@ -166,7 +168,7 @@ export default function Header() {
           {/* Desktop Consultation Button with Cool Specular Light Sheen Animation */}
           <Link
             href="/contact"
-            className="group relative overflow-hidden hidden rounded-full bg-gradient-to-r from-rose-600 to-rose-500 px-5 py-2 text-sm font-bold text-white shadow-md transition hover:from-rose-700 hover:to-rose-600 active:scale-[0.98] md:inline-flex md:items-center md:gap-1.5"
+            className="group relative overflow-hidden hidden rounded-full bg-gradient-to-r from-rose-600 to-rose-500 px-4 xl:px-5 py-2 text-xs xl:text-sm font-bold text-white shadow-md transition hover:from-rose-700 hover:to-rose-600 active:scale-[0.98] lg:inline-flex lg:items-center lg:gap-1.5"
           >
             <span
               aria-hidden="true"
@@ -175,11 +177,11 @@ export default function Header() {
             <span>{t(nav.bookConsultation, lang)}</span>
           </Link>
 
-          {/* Apple iOS Glassy Mobile Menu Button */}
+          {/* Optimized Apple iOS Glass Hamburger Menu Button */}
           <button
             type="button"
             onClick={() => setDrawerOpen(true)}
-            className="flex h-10 items-center justify-center gap-1.5 rounded-full bg-gradient-to-r from-rose-600/95 to-rose-500/95 px-3 text-xs font-bold text-white shadow-md shadow-rose-500/25 border border-white/30 backdrop-blur-md transition active:scale-95 hover:from-rose-700 hover:to-rose-600 shrink-0 lg:hidden"
+            className="flex h-10 items-center justify-center gap-1.5 rounded-full bg-gradient-to-r from-rose-600 to-rose-500 px-3.5 text-xs font-bold text-white shadow-md shadow-rose-500/25 border border-white/30 backdrop-blur-md transition active:scale-95 hover:from-rose-700 hover:to-rose-600 shrink-0 lg:hidden"
             aria-label="Open navigation menu"
           >
             <Menu size={18} strokeWidth={2.4} />

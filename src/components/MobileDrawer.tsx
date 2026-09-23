@@ -2,10 +2,11 @@
 
 import { useEffect, useRef } from "react";
 import Link from "next/link";
-import { X, Facebook, Globe, ChevronRight } from "lucide-react";
+import { usePathname } from "next/navigation";
+import { X, Facebook, Globe, ChevronRight, MessageCircle, Calendar, ShieldCheck } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
 import { useLanguage } from "@/context/LanguageContext";
-import { t } from "@/lib/utils";
+import { t, waLink } from "@/lib/utils";
 import content from "@/data/content.json";
 
 type NavLink = { href: string; label: string };
@@ -22,8 +23,16 @@ export default function MobileDrawer({
   servicesLinks: NavLink[];
 }) {
   const { lang, toggleLang } = useLanguage();
+  const pathname = usePathname();
   const panelRef = useRef<HTMLDivElement>(null);
   const triggerRef = useRef<Element | null>(null);
+
+  const whatsappHref = waLink(
+    content.site.whatsapp,
+    lang === "en"
+      ? "Hello Shammy, I'd like to know more about a consultation at Heart2Home."
+      : "হ্যালো শামী, আমি হার্ট টু হোম (Heart2Home) এর পরামর্শ সেশন সম্পর্কে জানতে চাই।"
+  );
 
   useEffect(() => {
     if (open) {
@@ -86,7 +95,7 @@ export default function MobileDrawer({
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 z-50 bg-slate-900/40 backdrop-blur-sm lg:hidden"
+            className="fixed inset-0 z-50 bg-slate-950/50 backdrop-blur-sm lg:hidden"
             onClick={onClose}
             aria-hidden="true"
           />
@@ -99,9 +108,10 @@ export default function MobileDrawer({
             aria-modal="true"
             aria-label="Site navigation"
             ref={panelRef}
-            className="fixed right-0 top-0 z-50 flex h-full w-[88%] max-w-sm flex-col ios-glass-drawer p-6 shadow-2xl lg:hidden"
+            className="fixed right-0 top-0 z-50 flex h-full w-[88%] max-w-sm flex-col ios-glass-drawer p-5 sm:p-6 shadow-2xl lg:hidden"
           >
-            <div className="mb-5 flex items-center justify-between">
+            {/* Drawer Header: Logo on left, Close button on right */}
+            <div className="mb-4 flex items-center justify-between border-b border-white/60 pb-3">
               <Link href="/" onClick={onClose} className="flex items-center gap-1 font-display text-xl font-bold tracking-tight">
                 <span className="text-rose-600">Heart</span>
                 <span className="text-teal-600">2</span>
@@ -115,82 +125,130 @@ export default function MobileDrawer({
                 type="button"
                 onClick={onClose}
                 aria-label="Close menu"
-                className="flex h-10 w-10 items-center justify-center rounded-full border border-white/80 bg-white/70 text-slate-700 shadow-sm backdrop-blur-md active:scale-95 active:bg-white"
+                className="flex h-10 w-10 items-center justify-center rounded-full border border-white/80 bg-white/80 text-slate-700 shadow-sm backdrop-blur-md active:scale-95 active:bg-white"
               >
                 <X size={18} />
               </button>
             </div>
 
+            {/* Language Switcher Pill */}
             <button
               type="button"
               onClick={toggleLang}
-              className="mb-4 flex min-h-[46px] items-center justify-center gap-2 rounded-2xl border border-rose-200/80 bg-rose-50/80 text-sm font-bold text-rose-700 shadow-sm backdrop-blur-md active:scale-[0.98]"
+              className="mb-3.5 flex min-h-[44px] items-center justify-center gap-2 rounded-2xl border border-rose-200/80 bg-rose-50/80 text-xs sm:text-sm font-bold text-rose-700 shadow-sm backdrop-blur-md transition active:scale-[0.98] hover:bg-rose-100"
             >
-              <Globe size={16} />
+              <Globe size={15} />
               <span>{lang === "en" ? "বাংলায় দেখুন (Switch to Bangla)" : "Switch to English"}</span>
             </button>
 
+            {/* Navigation Links List */}
             <nav
-              className="flex flex-1 flex-col gap-1.5 overflow-y-auto overscroll-contain pr-1"
+              className="flex flex-1 flex-col gap-1.5 overflow-y-auto overscroll-contain pr-1 py-1"
               aria-label="Mobile"
             >
-              {beforeServices.map((link) => (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  onClick={onClose}
-                  className="flex min-h-[46px] items-center rounded-2xl border border-white/60 bg-white/50 px-4 text-base font-bold text-slate-800 shadow-sm backdrop-blur-md transition active:bg-white/90 hover:bg-white/80 hover:text-rose-600"
-                >
-                  {link.label}
-                </Link>
-              ))}
+              {beforeServices.map((link) => {
+                const isActive = link.href === "/" ? pathname === "/" : pathname.startsWith(link.href);
+                return (
+                  <Link
+                    key={link.href}
+                    href={link.href}
+                    onClick={onClose}
+                    className={`flex min-h-[46px] items-center justify-between rounded-2xl px-4 text-sm sm:text-base font-bold transition active:scale-[0.99] ${
+                      isActive
+                        ? "border border-rose-300 bg-rose-50/95 text-rose-700 shadow-sm"
+                        : "border border-white/60 bg-white/50 text-slate-800 shadow-sm backdrop-blur-md hover:bg-white/80 hover:text-rose-600"
+                    }`}
+                  >
+                    <span>{link.label}</span>
+                    <ChevronRight size={15} className={isActive ? "text-rose-600" : "text-slate-400"} />
+                  </Link>
+                );
+              })}
 
-              {servicesLinks.map((link) => (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  onClick={onClose}
-                  className="ml-3 flex min-h-[42px] items-center gap-2 rounded-xl border-l-2 border-rose-400 bg-white/40 pl-3.5 pr-3 text-sm font-semibold text-slate-700 backdrop-blur-sm transition active:bg-white/80 hover:text-rose-600"
-                >
-                  <ChevronRight size={14} className="shrink-0 text-rose-500" />
-                  <span>{link.label}</span>
-                </Link>
-              ))}
+              {/* Sub-services links */}
+              <div className="my-1 space-y-1.5 pl-2">
+                {servicesLinks.map((link) => {
+                  const isActive = pathname === link.href;
+                  return (
+                    <Link
+                      key={link.href}
+                      href={link.href}
+                      onClick={onClose}
+                      className={`flex min-h-[40px] items-center gap-2 rounded-xl pl-3 pr-3 text-xs sm:text-sm font-semibold transition active:bg-white/90 ${
+                        isActive
+                          ? "border-l-3 border-rose-600 bg-rose-50/90 text-rose-700 font-bold shadow-sm"
+                          : "border-l-2 border-rose-400/70 bg-white/40 text-slate-700 backdrop-blur-sm hover:text-rose-600"
+                      }`}
+                    >
+                      <ChevronRight size={13} className="shrink-0 text-rose-500" />
+                      <span>{link.label}</span>
+                    </Link>
+                  );
+                })}
+              </div>
 
               {afterServices.length > 0 && (
-                <div className="my-1.5 h-px bg-white/50" />
+                <div className="my-1.5 h-px bg-white/60" />
               )}
 
-              {afterServices.map((link) => (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  onClick={onClose}
-                  className="flex min-h-[46px] items-center rounded-2xl border border-white/60 bg-white/50 px-4 text-base font-bold text-slate-800 shadow-sm backdrop-blur-md transition active:bg-white/90 hover:bg-white/80 hover:text-rose-600"
-                >
-                  {link.label}
-                </Link>
-              ))}
+              {afterServices.map((link) => {
+                const isActive = pathname === link.href || pathname.startsWith(link.href);
+                return (
+                  <Link
+                    key={link.href}
+                    href={link.href}
+                    onClick={onClose}
+                    className={`flex min-h-[46px] items-center justify-between rounded-2xl px-4 text-sm sm:text-base font-bold transition active:scale-[0.99] ${
+                      isActive
+                        ? "border border-rose-300 bg-rose-50/95 text-rose-700 shadow-sm"
+                        : "border border-white/60 bg-white/50 text-slate-800 shadow-sm backdrop-blur-md hover:bg-white/80 hover:text-rose-600"
+                    }`}
+                  >
+                    <span>{link.label}</span>
+                    <ChevronRight size={15} className={isActive ? "text-rose-600" : "text-slate-400"} />
+                  </Link>
+                );
+              })}
             </nav>
 
-            <div className="mt-4 flex flex-col gap-3 border-t border-white/60 pt-4">
-              <a
-                href={content.site.facebook}
-                target="_blank"
-                rel="noopener noreferrer"
-                onClick={onClose}
-                className="flex min-h-[46px] items-center justify-center gap-2 rounded-full border border-white/80 bg-white/70 text-sm font-bold text-slate-700 shadow-sm backdrop-blur-md active:scale-[0.98] active:bg-white"
-              >
-                <Facebook size={16} />
-                <span>Facebook Profile</span>
-              </a>
+            {/* Quick Action Footer in Drawer */}
+            <div className="mt-3 flex flex-col gap-2.5 border-t border-white/60 pt-3">
+              <div className="flex items-center gap-2">
+                <a
+                  href={whatsappHref}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={onClose}
+                  className="flex min-h-[42px] flex-1 items-center justify-center gap-1.5 rounded-full border border-teal-200/80 bg-teal-50/90 text-xs font-bold text-teal-800 shadow-sm backdrop-blur-md transition active:scale-95 hover:bg-teal-100"
+                >
+                  <MessageCircle size={15} className="text-teal-600" />
+                  <span>WhatsApp</span>
+                </a>
+                <a
+                  href={content.site.facebook}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={onClose}
+                  className="flex min-h-[42px] flex-1 items-center justify-center gap-1.5 rounded-full border border-white/80 bg-white/80 text-xs font-bold text-slate-700 shadow-sm backdrop-blur-md transition active:scale-95 hover:bg-white hover:text-rose-600"
+                >
+                  <Facebook size={15} />
+                  <span>Facebook</span>
+                </a>
+              </div>
+
               <Link
                 href="/contact"
                 onClick={onClose}
-                className="flex min-h-[46px] items-center justify-center rounded-full bg-gradient-to-r from-rose-600 to-rose-500 text-sm font-bold text-white shadow-lg shadow-rose-500/25 active:scale-[0.98]"
+                className="flex min-h-[48px] items-center justify-center gap-2 rounded-full bg-gradient-to-r from-rose-600 to-rose-500 text-sm font-bold text-white shadow-lg shadow-rose-500/25 transition active:scale-[0.98] hover:from-rose-700 hover:to-rose-600"
               >
-                {t(content.nav.bookConsultation, lang)}
+                <Calendar size={16} />
+                <span>{t(content.nav.bookConsultation, lang)}</span>
               </Link>
+
+              <div className="flex items-center justify-center gap-2 pt-1 text-[11px] font-semibold text-slate-500">
+                <ShieldCheck size={13} className="text-teal-600" />
+                <span>Mirpur Pallabi, Dhaka • 100% Confidential</span>
+              </div>
             </div>
           </motion.div>
         </>
