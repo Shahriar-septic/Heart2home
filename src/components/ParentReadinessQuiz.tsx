@@ -215,13 +215,13 @@ export default function ParentReadinessQuiz({
               {t(result.description, lang)}
             </p>
 
-            <div className="mt-8 flex flex-wrap gap-3.5">
+            <div className="mt-8 flex flex-col sm:flex-row flex-wrap items-stretch sm:items-center gap-3 sm:gap-3.5">
               {result.action === "whatsapp" ? (
                 <a
                   href={whatsappHref}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-rose-600 to-rose-500 hover:from-rose-700 hover:to-rose-600 px-7 py-3.5 text-sm font-bold text-white shadow-lg shadow-rose-500/25 transition active:scale-[0.98]"
+                  className="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-full bg-gradient-to-r from-rose-600 to-rose-500 hover:from-rose-700 hover:to-rose-600 px-7 py-3.5 text-sm font-bold text-white shadow-lg shadow-rose-500/25 transition active:scale-[0.98]"
                 >
                   <MessageCircle size={17} />
                   <span>{t(quiz.results.whatsappLabel, lang)}</span>
@@ -231,7 +231,7 @@ export default function ParentReadinessQuiz({
                   <a
                     href="/downloads/family-de-escalation-guide-en.pdf?v=1.0"
                     download
-                    className="inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-rose-600 to-rose-500 hover:from-rose-700 hover:to-rose-600 px-6 py-3.5 text-sm font-bold text-white shadow-md shadow-rose-500/20 transition active:scale-[0.98]"
+                    className="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-full bg-gradient-to-r from-rose-600 to-rose-500 hover:from-rose-700 hover:to-rose-600 px-6 py-3.5 text-sm font-bold text-white shadow-md shadow-rose-500/20 transition active:scale-[0.98]"
                   >
                     <Download size={16} />
                     <span>{t(quiz.results.downloadLabelEn, lang)}</span>
@@ -239,7 +239,7 @@ export default function ParentReadinessQuiz({
                   <a
                     href="/downloads/family-de-escalation-guide-bn.pdf?v=1.0"
                     download
-                    className="inline-flex items-center justify-center gap-2 rounded-full border-2 border-teal-600 bg-teal-50 px-6 py-3.5 text-sm font-bold text-teal-800 transition hover:bg-teal-100 active:scale-[0.98]"
+                    className="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-full border-2 border-teal-600 bg-teal-50 px-6 py-3.5 text-sm font-bold text-teal-800 transition hover:bg-teal-100 active:scale-[0.98]"
                   >
                     <Download size={16} />
                     <span>{t(quiz.results.downloadLabelBn, lang)}</span>
@@ -248,7 +248,7 @@ export default function ParentReadinessQuiz({
               )}
               <a
                 href="/contact"
-                className="inline-flex items-center justify-center gap-2 rounded-full border-2 border-slate-200 bg-white px-6 py-3.5 text-sm font-bold text-slate-800 transition hover:border-rose-400 hover:text-rose-600"
+                className="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-full border-2 border-slate-200 bg-white px-6 py-3.5 text-sm font-bold text-slate-800 transition hover:border-rose-400 hover:text-rose-600"
               >
                 <CalendarCheck size={16} />
                 <span>{t(quiz.results.bookLabel, lang)}</span>

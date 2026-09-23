@@ -24,7 +24,7 @@ export default function MiniBio() {
 
           <div className="grid grid-cols-1 items-center gap-8 sm:gap-12 md:grid-cols-[240px_1fr]">
             {/* Framed Portrait */}
-            <div className="relative mx-auto md:mx-0">
+            <div className="relative mx-auto md:mx-0 mb-4 md:mb-0">
               <div className="relative h-60 w-48 overflow-hidden rounded-t-[90px] rounded-b-[28px] border-4 border-white shadow-2xl ring-2 ring-rose-200/80">
                 <Image
                   src="/images/shammy-portrait.jpg"

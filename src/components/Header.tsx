@@ -134,7 +134,7 @@ export default function Header() {
         </nav>
 
         {/* Right Actions */}
-        <div className="flex items-center gap-2.5">
+        <div className="flex items-center gap-2 sm:gap-2.5 shrink-0">
           <a
             href={content.site.facebook}
             target="_blank"
@@ -148,7 +148,7 @@ export default function Header() {
           <button
             type="button"
             onClick={toggleLang}
-            className="min-h-[40px] rounded-full border border-slate-200 bg-white px-3.5 py-1.5 text-xs font-bold tracking-wide text-slate-700 shadow-sm transition active:scale-95 hover:border-rose-400 hover:text-rose-600 sm:px-4 sm:text-sm"
+            className="flex min-h-[40px] items-center justify-center rounded-full border border-slate-200 bg-white px-3 py-1.5 text-xs font-bold tracking-wide text-slate-700 shadow-sm transition active:scale-95 hover:border-rose-400 hover:text-rose-600 sm:px-4 sm:text-sm shrink-0"
             aria-label="Toggle language"
           >
             {lang === "en" ? "বাংলা" : "English"}
@@ -161,13 +161,15 @@ export default function Header() {
             <span>{t(nav.bookConsultation, lang)}</span>
           </Link>
 
+          {/* Prominent, Unmistakable Mobile Menu Button */}
           <button
             type="button"
             onClick={() => setDrawerOpen(true)}
-            className="flex h-10 w-10 items-center justify-center rounded-full border border-rose-200 bg-rose-50 text-rose-600 active:scale-95 lg:hidden"
-            aria-label="Open menu"
+            className="flex h-10 items-center justify-center gap-1.5 rounded-full bg-gradient-to-r from-rose-600 to-rose-500 px-3 text-xs font-bold text-white shadow-md shadow-rose-500/25 transition active:scale-95 hover:from-rose-700 hover:to-rose-600 shrink-0 lg:hidden"
+            aria-label="Open navigation menu"
           >
-            <Menu size={18} />
+            <Menu size={18} strokeWidth={2.4} />
+            <span className="font-extrabold tracking-wide">Menu</span>
           </button>
         </div>
       </div>

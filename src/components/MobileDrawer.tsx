@@ -102,12 +102,12 @@ export default function MobileDrawer({
             className="fixed right-0 top-0 z-50 flex h-full w-[88%] max-w-sm flex-col bg-white p-6 shadow-2xl lg:hidden"
           >
             <div className="mb-5 flex items-center justify-between">
-              <span className="flex items-center gap-1 font-display text-xl font-bold tracking-tight">
+              <Link href="/" onClick={onClose} className="flex items-center gap-1 font-display text-xl font-bold tracking-tight">
                 <span className="text-rose-600">Heart</span>
                 <span className="text-teal-600">2</span>
                 <span className="text-slate-900">Home</span>
                 <span className="h-2 w-2 rounded-full bg-rose-500 animate-pulse ml-1" />
-              </span>
+              </Link>
               <button
                 type="button"
                 onClick={onClose}
@@ -135,6 +135,7 @@ export default function MobileDrawer({
                 <Link
                   key={link.href}
                   href={link.href}
+                  onClick={onClose}
                   className="flex min-h-[46px] items-center rounded-xl px-3.5 text-base font-bold text-slate-800 transition active:bg-rose-50 hover:bg-rose-50 hover:text-rose-600"
                 >
                   {link.label}
@@ -145,6 +146,7 @@ export default function MobileDrawer({
                 <Link
                   key={link.href}
                   href={link.href}
+                  onClick={onClose}
                   className="ml-3 flex min-h-[42px] items-center gap-2 rounded-xl border-l-2 border-rose-200 pl-3.5 text-sm font-semibold text-slate-700 transition active:bg-rose-50 hover:text-rose-600"
                 >
                   <ChevronRight size={14} className="shrink-0 text-rose-500" />
@@ -160,6 +162,7 @@ export default function MobileDrawer({
                 <Link
                   key={link.href}
                   href={link.href}
+                  onClick={onClose}
                   className="flex min-h-[46px] items-center rounded-xl px-3.5 text-base font-bold text-slate-800 transition active:bg-rose-50 hover:bg-rose-50 hover:text-rose-600"
                 >
                   {link.label}
@@ -172,6 +175,7 @@ export default function MobileDrawer({
                 href={content.site.facebook}
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={onClose}
                 className="flex min-h-[46px] items-center justify-center gap-2 rounded-full border border-slate-200 bg-white text-sm font-bold text-slate-700 shadow-sm active:scale-[0.98] active:bg-slate-100"
               >
                 <Facebook size={16} />
@@ -179,6 +183,7 @@ export default function MobileDrawer({
               </a>
               <Link
                 href="/contact"
+                onClick={onClose}
                 className="flex min-h-[46px] items-center justify-center rounded-full bg-gradient-to-r from-rose-600 to-rose-500 text-sm font-bold text-white shadow-lg shadow-rose-500/25 active:scale-[0.98]"
               >
                 {t(content.nav.bookConsultation, lang)}

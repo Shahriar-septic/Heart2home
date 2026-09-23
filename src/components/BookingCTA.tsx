@@ -48,10 +48,10 @@ export default function BookingCTA() {
               {t(cta.description, lang)}
             </p>
 
-            <div className="mt-8 flex flex-wrap justify-center gap-3.5 sm:gap-4">
+            <div className="mt-8 flex flex-col sm:flex-row justify-center items-stretch sm:items-center gap-3.5 sm:gap-4 max-w-md mx-auto sm:max-w-none">
               <Link
                 href="/contact"
-                className="inline-flex items-center gap-2 rounded-full bg-white px-7 py-3.5 text-sm font-bold text-rose-600 shadow-xl transition duration-200 hover:bg-rose-50 active:scale-[0.98]"
+                className="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-full bg-white px-7 py-3.5 text-sm font-bold text-rose-600 shadow-xl transition duration-200 hover:bg-rose-50 active:scale-[0.98]"
               >
                 <CalendarCheck size={16} />
                 <span>{t(content.nav.bookConsultation, lang)}</span>
@@ -60,7 +60,7 @@ export default function BookingCTA() {
                 href={whatsappHref}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-full border-2 border-white/60 bg-white/10 px-6 py-3.5 text-sm font-bold text-white backdrop-blur-sm transition duration-200 hover:bg-white/20 active:scale-[0.98]"
+                className="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-full border-2 border-white/70 bg-white/10 px-6 py-3.5 text-sm font-bold text-white backdrop-blur-sm transition duration-200 hover:bg-white/20 active:scale-[0.98]"
               >
                 <MessageCircle size={16} />
                 <span>{t(content.nav.chatWhatsapp, lang)}</span>
