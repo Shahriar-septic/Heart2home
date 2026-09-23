@@ -22,13 +22,13 @@ export default function Hero() {
   );
 
   return (
-    <div className="relative overflow-visible pb-12 sm:pb-20">
+    <div className="sticky top-0 z-10 min-h-[92vh] sm:min-h-screen w-full flex flex-col justify-between overflow-visible pb-10 sm:pb-16">
       {/* ========================================================================= */}
       {/* 1. Curved Canopy Hero with Contextual Photographic Family Background     */}
       {/* ========================================================================= */}
-      <section className="relative overflow-hidden rounded-b-[2.5rem] sm:rounded-b-[4.5rem] bg-[#1a0826] pt-8 pb-20 sm:pt-14 sm:pb-28 text-white shadow-2xl">
+      <section className="relative flex-1 flex flex-col justify-center overflow-hidden rounded-b-[2.5rem] sm:rounded-b-[4.5rem] pt-8 pb-18 sm:pt-12 sm:pb-24 text-white shadow-2xl">
         {/* Photographic Family Care Backdrop with Living Moving Tints & High Image Visibility */}
-        <div className="absolute inset-0 -z-20 overflow-hidden pointer-events-none select-none">
+        <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none select-none">
           {/* 1. Underlying High-Visibility Photograph (Mother & Child clearly seen) */}
           <Image
             src="/images/hero-family-bg.jpg"
@@ -36,15 +36,15 @@ export default function Hero() {
             fill
             priority
             sizes="100vw"
-            className="object-cover object-[center_32%] scale-100 opacity-80 transition-transform duration-1000 ease-out"
+            className="object-cover object-[center_28%] scale-100 opacity-90 transition-transform duration-1000 ease-out"
           />
 
           {/* 2. Fluid Moving Aurora Mesh Overlay (Plum into Emerald animation) */}
           <div
-            className="absolute inset-0 opacity-60 animate-aurora-mesh mix-blend-color"
+            className="absolute inset-0 opacity-50 animate-aurora-mesh mix-blend-color"
             style={{
               backgroundImage:
-                "linear-gradient(135deg, #701A75 0%, #831843 25%, #4C0519 45%, #0A3D36 70%, #0D5C52 88%, #064E3B 100%)",
+                "linear-gradient(135deg, #701A75 0%, #831843 30%, #0A3D36 70%, #064E3B 100%)",
               backgroundSize: "220% 220%",
             }}
           />
@@ -52,15 +52,11 @@ export default function Hero() {
           {/* 3. Fluid Moving Floating Color Blobs (Living animated ambient light) */}
           <div
             aria-hidden="true"
-            className="pointer-events-none absolute -left-16 -top-20 h-[480px] w-[480px] rounded-full bg-rose-500/35 blur-[100px] animate-aurora-blob-1"
+            className="pointer-events-none absolute -left-16 -top-20 h-[480px] w-[480px] rounded-full bg-rose-500/25 blur-[100px] animate-aurora-blob-1"
           />
           <div
             aria-hidden="true"
-            className="pointer-events-none absolute -right-20 -bottom-24 h-[520px] w-[520px] rounded-full bg-teal-400/35 blur-[110px] animate-aurora-blob-2"
-          />
-          <div
-            aria-hidden="true"
-            className="pointer-events-none absolute left-1/3 top-1/4 h-[380px] w-[380px] rounded-full bg-purple-600/25 blur-[95px] animate-aurora-blob-3"
+            className="pointer-events-none absolute -right-20 -bottom-24 h-[520px] w-[520px] rounded-full bg-teal-400/25 blur-[110px] animate-aurora-blob-2"
           />
 
           {/* 4. Left-to-Right Directional Readability Mask: Darker on text (left), soft & clear on photo (right) */}
@@ -68,15 +64,15 @@ export default function Hero() {
             className="absolute inset-0"
             style={{
               background:
-                "linear-gradient(to right, rgba(16, 4, 22, 0.92) 0%, rgba(16, 4, 22, 0.78) 42%, rgba(16, 4, 22, 0.32) 70%, rgba(4, 30, 26, 0.45) 100%)",
+                "linear-gradient(to right, rgba(12, 3, 16, 0.85) 0%, rgba(12, 3, 16, 0.70) 45%, rgba(12, 3, 16, 0.15) 75%, rgba(4, 25, 22, 0.25) 100%)",
             }}
           />
 
           {/* 5. Subtle Edge Vignette */}
-          <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-slate-950/40" />
+          <div className="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-slate-950/30" />
         </div>
 
-        <Container>
+        <Container className="relative z-10">
           <div className="grid grid-cols-1 items-center gap-10 sm:gap-14 lg:grid-cols-[1.1fr_0.9fr] lg:gap-12">
             <motion.div
               initial={{ opacity: 0, y: 16 }}

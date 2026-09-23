@@ -81,26 +81,33 @@ export default function HomePage() {
   return (
     <>
       <JsonLd data={jsonLd} />
+      {/* Slide 1: Hero (z-10, Mother & Child Photo with Moving Aurora) */}
       <Hero />
-      <ScrollSlide asCard>
+
+      {/* Slide 2: Pain Points (z-20, Light Card Slide, Glides Up Over Hero) */}
+      <ScrollSlide zIndex={20} bg="bg-[#F8FAFC]">
         <PainPointGrid />
       </ScrollSlide>
-      <ScrollSlide>
+
+      {/* Slide 3: Care Pillars (z-30, Therapy Lounge Photo with Moving Aurora) */}
+      <ScrollSlide zIndex={30} bg="bg-[#0f0414]">
         <PillarSummary />
       </ScrollSlide>
-      <ScrollSlide asCard>
+
+      {/* Slide 4: Self-Assessment Quiz & Badges (z-40) */}
+      <ScrollSlide zIndex={40} bg="bg-[#F8FAFC]">
         <QuizTeaser />
-      </ScrollSlide>
-      <ScrollSlide>
         <TrustBadges />
       </ScrollSlide>
-      <ScrollSlide asCard>
+
+      {/* Slide 5: Lead Counsellor Bio & Testimonials (z-50) */}
+      <ScrollSlide zIndex={50} bg="bg-white">
         <MiniBio />
-      </ScrollSlide>
-      <ScrollSlide asCard>
         <Testimonials />
       </ScrollSlide>
-      <ScrollSlide>
+
+      {/* Slide 6: Family Terrace Bonding CTA (z-60, Family Terrace Photo with Moving Aurora) */}
+      <ScrollSlide zIndex={60} bg="bg-[#0f0414]">
         <BookingCTA />
       </ScrollSlide>
     </>

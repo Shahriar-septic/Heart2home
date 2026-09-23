@@ -24,53 +24,41 @@ export default function BookingCTA() {
       <Container>
         {/* Living Color Aurora Card with continuous moving color animation */}
         <div
-          className="relative overflow-hidden rounded-[2rem] border border-white/25 px-6 py-14 text-center text-white shadow-[0_25px_60px_-15px_rgba(225,29,72,0.35),0_15px_35px_-10px_rgba(13,148,136,0.25)] sm:px-12 sm:py-18 animate-aurora-mesh"
-          style={{
-            backgroundImage:
-              "linear-gradient(135deg, #581C3F 0%, #701A75 20%, #4A1528 42%, #0A2E28 65%, #0D5C52 85%, #064E3B 100%)",
-            backgroundSize: "220% 220%",
-          }}
+          className="relative overflow-hidden rounded-[2.5rem] sm:rounded-[3rem] border border-white/20 px-6 py-16 text-center text-white shadow-[0_25px_60px_-15px_rgba(225,29,72,0.35),0_15px_35px_-10px_rgba(13,148,136,0.25)] sm:px-12 sm:py-20"
         >
-          {/* Fluid Moving Aurora Light Orbs */}
-          {/* Orb 1: Luminous Warm Rose Blob */}
-          <div
-            aria-hidden="true"
-            className="pointer-events-none absolute -left-20 -top-28 h-[420px] w-[420px] rounded-full bg-rose-400/50 blur-[90px] animate-aurora-blob-1"
-          />
-
-          {/* Orb 2: Deep Healing Teal Blob */}
-          <div
-            aria-hidden="true"
-            className="pointer-events-none absolute -right-24 -bottom-28 h-[460px] w-[460px] rounded-full bg-teal-400/45 blur-[100px] animate-aurora-blob-2"
-          />
-
-          {/* Orb 3: Coral & Magenta Center Swirl */}
-          <div
-            aria-hidden="true"
-            className="pointer-events-none absolute left-1/4 top-1/4 h-[350px] w-[350px] rounded-full bg-pink-500/35 blur-[85px] animate-aurora-blob-3"
-          />
-
-          {/* Orb 4: Indigo Depth Accent */}
-          <div
-            aria-hidden="true"
-            className="pointer-events-none absolute -left-10 bottom-0 h-[300px] w-[300px] rounded-full bg-indigo-600/30 blur-[90px] animate-aurora-blob-2"
-          />
-
-          {/* Specular Radial Overlay for Rich Saturation */}
-          <div
-            aria-hidden="true"
-            className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/25 via-transparent to-white/10"
-          />
-
-          {/* Photographic Family Reconnection Texture - Clearly Visible */}
-          <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none select-none">
+          {/* Photographic Family Reconnection Backdrop with Living Colors */}
+          <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none select-none">
+            {/* 1. Underlying High-Visibility Photograph */}
             <Image
               src="/images/family-bonding-bg.jpg"
               alt="Heartfelt family bonding and peace of mind"
               fill
               sizes="(max-width: 1200px) 100vw, 1200px"
-              className="object-cover object-center opacity-65 mix-blend-overlay"
+              className="object-cover object-[center_35%] opacity-80"
             />
+
+            {/* 2. Fluid Animated Aurora Moving Gradient Mesh */}
+            <div
+              className="absolute inset-0 opacity-55 animate-aurora-mesh mix-blend-color"
+              style={{
+                backgroundImage:
+                  "linear-gradient(135deg, #701A75 0%, #831843 30%, #0A3D36 70%, #064E3B 100%)",
+                backgroundSize: "220% 220%",
+              }}
+            />
+
+            {/* 3. Fluid Moving Floating Color Blobs */}
+            <div
+              aria-hidden="true"
+              className="pointer-events-none absolute -left-16 -top-20 h-[420px] w-[420px] rounded-full bg-rose-500/30 blur-[90px] animate-aurora-blob-1"
+            />
+            <div
+              aria-hidden="true"
+              className="pointer-events-none absolute -right-20 -bottom-20 h-[440px] w-[440px] rounded-full bg-teal-400/30 blur-[95px] animate-aurora-blob-2"
+            />
+
+            {/* 4. Contrast Overlay */}
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/45 to-black/60" />
           </div>
 
           {/* Content */}

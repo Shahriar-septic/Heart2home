@@ -18,22 +18,22 @@ export default function PillarSummary() {
     <section className="relative overflow-hidden my-8 sm:my-14 rounded-[2.5rem] sm:rounded-[3.5rem] py-18 sm:py-24 shadow-2xl">
       {/* ========================================================================= */}
       {/* Photographic Therapy Consultation Sanctuary Backdrop with Visible Room & Moving Colors */}
-      <div className="absolute inset-0 -z-20 overflow-hidden pointer-events-none select-none">
+      <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none select-none">
         {/* 1. Underlying High-Visibility Therapy Lounge Photograph */}
         <Image
           src="/images/therapy-lounge-bg.jpg"
           alt="Peaceful and comforting psychotherapy consultation room"
           fill
           sizes="100vw"
-          className="object-cover object-center opacity-75 transition-transform duration-1000 ease-out"
+          className="object-cover object-center opacity-90 transition-transform duration-1000 ease-out"
         />
 
         {/* 2. Fluid Animated Aurora Moving Gradient Mesh */}
         <div
-          className="absolute inset-0 opacity-60 animate-aurora-mesh mix-blend-color"
+          className="absolute inset-0 opacity-50 animate-aurora-mesh mix-blend-color"
           style={{
             backgroundImage:
-              "linear-gradient(135deg, #701A75 0%, #831843 25%, #4C0519 50%, #0A3D36 72%, #0D5C52 90%, #064E3B 100%)",
+              "linear-gradient(135deg, #701A75 0%, #831843 30%, #0A3D36 70%, #064E3B 100%)",
             backgroundSize: "220% 220%",
           }}
         />
@@ -41,11 +41,11 @@ export default function PillarSummary() {
         {/* 3. Fluid Moving Floating Color Blobs */}
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute -left-16 -top-20 h-[480px] w-[480px] rounded-full bg-rose-500/35 blur-[105px] animate-aurora-blob-1"
+          className="pointer-events-none absolute -left-16 -top-20 h-[480px] w-[480px] rounded-full bg-rose-500/25 blur-[105px] animate-aurora-blob-1"
         />
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute -right-20 -bottom-24 h-[500px] w-[500px] rounded-full bg-teal-400/35 blur-[115px] animate-aurora-blob-2"
+          className="pointer-events-none absolute -right-20 -bottom-24 h-[500px] w-[500px] rounded-full bg-teal-400/25 blur-[115px] animate-aurora-blob-2"
         />
 
         {/* 4. Directional Readability Gradient Mask */}
@@ -53,15 +53,15 @@ export default function PillarSummary() {
           className="absolute inset-0"
           style={{
             background:
-              "linear-gradient(to bottom, rgba(16, 4, 22, 0.88) 0%, rgba(16, 4, 22, 0.60) 25%, rgba(4, 30, 26, 0.65) 75%, rgba(4, 30, 26, 0.90) 100%)",
+              "linear-gradient(to bottom, rgba(14, 3, 18, 0.82) 0%, rgba(14, 3, 18, 0.55) 25%, rgba(4, 25, 22, 0.60) 75%, rgba(4, 25, 22, 0.85) 100%)",
           }}
         />
 
         {/* 5. Edge Vignette */}
-        <div className="absolute inset-0 bg-gradient-to-t from-slate-950/75 via-transparent to-slate-950/40" />
+        <div className="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-slate-950/30" />
       </div>
 
-      <Container>
+      <Container className="relative z-10">
         {/* Reassurance pill */}
         <div className="mb-3 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-3.5 py-1 text-xs font-bold text-rose-200 backdrop-blur-md">
           <Sparkles size={13} className="text-rose-300" />

@@ -47,7 +47,7 @@ export default function Header() {
   ];
 
   return (
-    <header className="sticky top-0 z-40 ios-glass">
+    <header className="sticky top-0 z-[100] ios-glass">
       {/* Dynamic Animated Ambient Shimmer Stripe */}
       <div
         aria-hidden="true"
