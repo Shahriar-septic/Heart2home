@@ -99,20 +99,23 @@ export default function MobileDrawer({
             aria-modal="true"
             aria-label="Site navigation"
             ref={panelRef}
-            className="fixed right-0 top-0 z-50 flex h-full w-[88%] max-w-sm flex-col bg-white p-6 shadow-2xl lg:hidden"
+            className="fixed right-0 top-0 z-50 flex h-full w-[88%] max-w-sm flex-col ios-glass-drawer p-6 shadow-2xl lg:hidden"
           >
             <div className="mb-5 flex items-center justify-between">
               <Link href="/" onClick={onClose} className="flex items-center gap-1 font-display text-xl font-bold tracking-tight">
                 <span className="text-rose-600">Heart</span>
                 <span className="text-teal-600">2</span>
                 <span className="text-slate-900">Home</span>
-                <span className="h-2 w-2 rounded-full bg-rose-500 animate-pulse ml-1" />
+                <span className="relative ml-0.5 flex h-2.5 w-2.5 items-center justify-center">
+                  <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-rose-400 opacity-75" />
+                  <span className="relative inline-flex h-2 w-2 rounded-full bg-rose-500 animate-heartbeat shadow-sm" />
+                </span>
               </Link>
               <button
                 type="button"
                 onClick={onClose}
                 aria-label="Close menu"
-                className="flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 text-slate-600 active:scale-95 active:bg-slate-100"
+                className="flex h-10 w-10 items-center justify-center rounded-full border border-white/80 bg-white/70 text-slate-700 shadow-sm backdrop-blur-md active:scale-95 active:bg-white"
               >
                 <X size={18} />
               </button>
@@ -121,14 +124,14 @@ export default function MobileDrawer({
             <button
               type="button"
               onClick={toggleLang}
-              className="mb-4 flex min-h-[46px] items-center justify-center gap-2 rounded-2xl border border-rose-200 bg-rose-50 text-sm font-bold text-rose-700 shadow-sm active:scale-[0.98]"
+              className="mb-4 flex min-h-[46px] items-center justify-center gap-2 rounded-2xl border border-rose-200/80 bg-rose-50/80 text-sm font-bold text-rose-700 shadow-sm backdrop-blur-md active:scale-[0.98]"
             >
               <Globe size={16} />
               <span>{lang === "en" ? "বাংলায় দেখুন (Switch to Bangla)" : "Switch to English"}</span>
             </button>
 
             <nav
-              className="flex flex-1 flex-col gap-1 overflow-y-auto overscroll-contain"
+              className="flex flex-1 flex-col gap-1.5 overflow-y-auto overscroll-contain pr-1"
               aria-label="Mobile"
             >
               {beforeServices.map((link) => (
@@ -136,7 +139,7 @@ export default function MobileDrawer({
                   key={link.href}
                   href={link.href}
                   onClick={onClose}
-                  className="flex min-h-[46px] items-center rounded-xl px-3.5 text-base font-bold text-slate-800 transition active:bg-rose-50 hover:bg-rose-50 hover:text-rose-600"
+                  className="flex min-h-[46px] items-center rounded-2xl border border-white/60 bg-white/50 px-4 text-base font-bold text-slate-800 shadow-sm backdrop-blur-md transition active:bg-white/90 hover:bg-white/80 hover:text-rose-600"
                 >
                   {link.label}
                 </Link>
@@ -147,7 +150,7 @@ export default function MobileDrawer({
                   key={link.href}
                   href={link.href}
                   onClick={onClose}
-                  className="ml-3 flex min-h-[42px] items-center gap-2 rounded-xl border-l-2 border-rose-200 pl-3.5 text-sm font-semibold text-slate-700 transition active:bg-rose-50 hover:text-rose-600"
+                  className="ml-3 flex min-h-[42px] items-center gap-2 rounded-xl border-l-2 border-rose-400 bg-white/40 pl-3.5 pr-3 text-sm font-semibold text-slate-700 backdrop-blur-sm transition active:bg-white/80 hover:text-rose-600"
                 >
                   <ChevronRight size={14} className="shrink-0 text-rose-500" />
                   <span>{link.label}</span>
@@ -155,7 +158,7 @@ export default function MobileDrawer({
               ))}
 
               {afterServices.length > 0 && (
-                <div className="my-1.5 h-px bg-slate-100" />
+                <div className="my-1.5 h-px bg-white/50" />
               )}
 
               {afterServices.map((link) => (
@@ -163,20 +166,20 @@ export default function MobileDrawer({
                   key={link.href}
                   href={link.href}
                   onClick={onClose}
-                  className="flex min-h-[46px] items-center rounded-xl px-3.5 text-base font-bold text-slate-800 transition active:bg-rose-50 hover:bg-rose-50 hover:text-rose-600"
+                  className="flex min-h-[46px] items-center rounded-2xl border border-white/60 bg-white/50 px-4 text-base font-bold text-slate-800 shadow-sm backdrop-blur-md transition active:bg-white/90 hover:bg-white/80 hover:text-rose-600"
                 >
                   {link.label}
                 </Link>
               ))}
             </nav>
 
-            <div className="mt-4 flex flex-col gap-3 border-t border-slate-100 pt-4">
+            <div className="mt-4 flex flex-col gap-3 border-t border-white/60 pt-4">
               <a
                 href={content.site.facebook}
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={onClose}
-                className="flex min-h-[46px] items-center justify-center gap-2 rounded-full border border-slate-200 bg-white text-sm font-bold text-slate-700 shadow-sm active:scale-[0.98] active:bg-slate-100"
+                className="flex min-h-[46px] items-center justify-center gap-2 rounded-full border border-white/80 bg-white/70 text-sm font-bold text-slate-700 shadow-sm backdrop-blur-md active:scale-[0.98] active:bg-white"
               >
                 <Facebook size={16} />
                 <span>Facebook Profile</span>
