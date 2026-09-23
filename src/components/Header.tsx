@@ -47,15 +47,24 @@ export default function Header() {
   ];
 
   return (
-    <header className="sticky top-0 z-40 border-b border-slate-200/80 bg-white/90 shadow-sm backdrop-blur-xl">
+    <header className="sticky top-0 z-40 border-b border-slate-200/80 bg-white/95 shadow-sm backdrop-blur-xl">
+      {/* Dynamic Animated Ambient Shimmer Stripe */}
+      <div
+        aria-hidden="true"
+        className="h-[3px] w-full bg-gradient-to-r from-rose-500 via-teal-400 via-indigo-500 to-rose-500 bg-[length:200%_100%] animate-shimmer-flow"
+      />
+
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-3 sm:px-6 sm:py-3.5">
-        {/* Heart2Home Brand */}
-        <Link href="/" className="group flex flex-col leading-tight">
+        {/* Heart2Home Brand with Animated Beating Indicator */}
+        <Link href="/" className="group flex flex-col leading-tight shrink-0">
           <span className="flex items-center gap-1.5 font-display text-xl font-bold tracking-tight sm:text-2xl">
-            <span className="text-rose-600">Heart</span>
+            <span className="text-rose-600 transition-colors group-hover:text-rose-700">Heart</span>
             <span className="text-teal-600">2</span>
             <span className="text-slate-900">Home</span>
-            <span className="h-2 w-2 rounded-full bg-rose-500 animate-pulse" />
+            <span className="relative ml-0.5 flex h-2.5 w-2.5 items-center justify-center">
+              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-rose-400 opacity-75" />
+              <span className="relative inline-flex h-2 w-2 rounded-full bg-rose-500 animate-heartbeat shadow-sm" />
+            </span>
           </span>
           <span className="hidden text-[11px] font-medium text-slate-500 sm:block">
             {lang === "en" ? "Child & Family Guidance • Shammy Akhter" : "শিশু ও পারিবারিক কাউন্সেলিং • শামী আক্তার"}
@@ -77,10 +86,10 @@ export default function Header() {
                   onClick={() => setServicesOpen((v) => !v)}
                   aria-expanded={servicesOpen}
                   aria-haspopup="true"
-                  className={`flex items-center gap-1 rounded-full px-3.5 py-2 text-sm font-medium transition ${
+                  className={`flex items-center gap-1 rounded-full px-3.5 py-2 text-sm font-medium transition duration-200 ${
                     isActive || servicesOpen
-                      ? "bg-rose-50 text-rose-700 font-semibold"
-                      : "text-slate-700 hover:bg-slate-100 hover:text-rose-600"
+                      ? "bg-rose-50 text-rose-700 font-bold shadow-sm"
+                      : "text-slate-700 hover:bg-slate-100/90 hover:text-rose-600"
                   }`}
                 >
                   <span>{link.label}</span>
@@ -93,7 +102,7 @@ export default function Header() {
                 </button>
 
                 {servicesOpen && (
-                  <div className="absolute left-0 top-full mt-2 w-72 overflow-hidden rounded-2xl border border-slate-200 bg-white p-2 shadow-2xl">
+                  <div className="absolute left-0 top-full mt-2 w-72 overflow-hidden rounded-2xl border border-slate-200 bg-white p-2 shadow-2xl animate-fade-up">
                     <Link
                       href="/services"
                       className="flex items-center justify-between rounded-xl px-3.5 py-2.5 text-sm font-bold text-rose-600 transition hover:bg-rose-50"
@@ -121,10 +130,10 @@ export default function Header() {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`rounded-full px-3.5 py-2 text-sm font-medium transition ${
+                className={`rounded-full px-3.5 py-2 text-sm font-medium transition duration-200 ${
                   isActive
-                    ? "bg-rose-50 text-rose-700 font-semibold"
-                    : "text-slate-700 hover:bg-slate-100 hover:text-rose-600"
+                    ? "bg-rose-50 text-rose-700 font-bold shadow-sm"
+                    : "text-slate-700 hover:bg-slate-100/90 hover:text-rose-600"
                 }`}
               >
                 {link.label}
@@ -154,10 +163,15 @@ export default function Header() {
             {lang === "en" ? "বাংলা" : "English"}
           </button>
 
+          {/* Desktop Consultation Button with Cool Specular Light Sheen Animation */}
           <Link
             href="/contact"
-            className="hidden rounded-full bg-gradient-to-r from-rose-600 to-rose-500 px-5 py-2 text-sm font-bold text-white shadow-md transition hover:from-rose-700 hover:to-rose-600 active:scale-[0.98] md:inline-flex md:items-center md:gap-1.5"
+            className="group relative overflow-hidden hidden rounded-full bg-gradient-to-r from-rose-600 to-rose-500 px-5 py-2 text-sm font-bold text-white shadow-md transition hover:from-rose-700 hover:to-rose-600 active:scale-[0.98] md:inline-flex md:items-center md:gap-1.5"
           >
+            <span
+              aria-hidden="true"
+              className="pointer-events-none absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/30 to-transparent animate-button-shine"
+            />
             <span>{t(nav.bookConsultation, lang)}</span>
           </Link>
 
