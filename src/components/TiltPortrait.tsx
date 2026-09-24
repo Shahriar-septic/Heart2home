@@ -76,32 +76,26 @@ export default function TiltPortrait({
           }}
         />
 
-        {/* Outer arch wrapper to anchor both Cutout and Status Badge */}
+        {/* Outer arch wrapper to anchor both Curved Frame and Status Badge */}
         <div className="relative flex flex-col items-center">
-          {/* Vibrant Architectural Arch Backdrop */}
-          <div
-            aria-hidden="true"
-            className="absolute inset-x-2 top-4 bottom-0 -z-10 mx-auto w-[240px] sm:w-[310px] rounded-t-[140px] rounded-b-[36px] bg-gradient-to-b from-rose-100/90 via-white to-teal-50 border-2 border-rose-200/80 shadow-card"
-          />
-
-          {/* Floating Top Pill Badge: Certified Specialist */}
-          <div className="absolute -top-3 right-0 sm:-right-4 z-20 flex items-center gap-2 rounded-full border border-teal-200 bg-white px-3.5 py-1.5 shadow-md">
+          {/* Floating Top Pill Badge: Certified Practitioner */}
+          <div className="absolute -top-3.5 right-0 sm:-right-4 z-20 flex items-center gap-2 rounded-full border border-teal-200/90 bg-white/95 px-3.5 py-1.5 shadow-[0_4px_14px_rgba(13,148,136,0.18)] backdrop-blur-sm">
             <span className="relative flex h-2.5 w-2.5">
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-teal-400 opacity-75" />
               <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-teal-600" />
             </span>
             <span className="text-[11px] sm:text-xs font-bold tracking-wide text-teal-800">
-              Certified Specialist
+              Certified Practitioner
             </span>
           </div>
 
           {/* Grounding Contact Shadow */}
           <div
             aria-hidden="true"
-            className="absolute inset-x-6 bottom-1 h-6 rounded-full bg-slate-900/10 blur-xl"
+            className="absolute inset-x-6 bottom-1 h-6 rounded-full bg-slate-900/10 blur-xl pointer-events-none"
           />
 
-          {/* Cutout Image */}
+          {/* Tilt container */}
           <motion.div
             style={
               canTilt
@@ -110,21 +104,33 @@ export default function TiltPortrait({
                     rotateY,
                     x: translateX,
                     y: translateY,
-                    transformStyle: "preserve-3d",
                   }
                 : {}
             }
-            className="relative w-[240px] sm:w-[310px] pt-4"
+            className="relative"
           >
-            <Image
-              src="/images/shammy-cutout.png"
-              alt="Shammy Akhter — Heart2Home Lead Counsellor"
-              width={1000}
-              height={1150}
-              priority
-              sizes="(max-width: 640px) 240px, 310px"
-              className="h-auto w-full drop-shadow-[0_16px_25px_rgba(225,29,72,0.18)] drop-shadow-[0_4px_10px_rgba(15,23,42,0.1)]"
-            />
+            {/* The Curved Arch Box - Perfectly Clipped & Positioned */}
+            <div className="relative w-[250px] sm:w-[320px] rounded-t-[140px] rounded-b-[40px] bg-gradient-to-b from-rose-100/90 via-white to-teal-50 border-2 border-rose-200/90 shadow-[0_20px_45px_-10px_rgba(225,29,72,0.18),0_10px_20px_-5px_rgba(15,23,42,0.06)] overflow-hidden">
+              <div
+                className="relative w-full h-full overflow-hidden"
+                style={{
+                  clipPath: "inset(0 round 138px 138px 38px 38px)",
+                  WebkitClipPath: "inset(0 round 138px 138px 38px 38px)",
+                }}
+              >
+                <div className="relative w-full pt-5 sm:pt-6 -translate-x-[3.5%]">
+                  <Image
+                    src="/images/shammy-cutout.png"
+                    alt="Shammy Akhter — Heart2Home Lead Counsellor"
+                    width={1000}
+                    height={1150}
+                    priority
+                    sizes="(max-width: 640px) 250px, 320px"
+                    className="h-auto w-full object-contain block drop-shadow-[0_12px_20px_rgba(225,29,72,0.12)]"
+                  />
+                </div>
+              </div>
+            </div>
           </motion.div>
         </div>
 

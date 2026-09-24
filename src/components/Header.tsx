@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState, useRef, useEffect } from "react";
 import { Facebook, ChevronDown, Menu, ArrowRight } from "lucide-react";
+import { motion } from "framer-motion";
 import { useLanguage } from "@/context/LanguageContext";
 import { t } from "@/lib/utils";
 import content from "@/data/content.json";
@@ -73,41 +74,62 @@ export default function Header() {
           </Link>
         </div>
 
-        {/* 2. Middle: Desktop Navigation Links Centered Mathematically */}
-        <nav className="hidden items-center justify-center gap-1 xl:gap-1.5 lg:flex whitespace-nowrap" aria-label="Primary">
+        {/* 2. Middle: Floating Capsule Dock Navigation with Illuminated Active Pill */}
+        <nav
+          className="hidden items-center justify-center gap-1 xl:gap-1.5 p-1.5 rounded-full border-2 border-rose-300/80 bg-white/95 backdrop-blur-2xl shadow-[0_8px_30px_-4px_rgba(225,29,72,0.18),0_2px_8px_-1px_rgba(15,23,42,0.06),inset_0_1px_1px_rgba(255,255,255,1)] ring-2 ring-rose-200/70 lg:flex whitespace-nowrap transition-all duration-200"
+          aria-label="Primary"
+        >
           {links.map((link) => {
-            const isActive =
+            const isRouteActive =
               link.href === "/"
                 ? pathname === "/"
                 : pathname.startsWith(link.href);
 
             return link.hasDropdown ? (
               <div key={link.href} className="relative" ref={servicesRef}>
+                {isRouteActive && (
+                  <motion.div
+                    layoutId="navbar-active-pill"
+                    className="absolute inset-0 rounded-full bg-gradient-to-r from-rose-600 via-rose-600 to-rose-500 shadow-[0_2px_12px_rgba(225,29,72,0.36)] ring-1 ring-white/30"
+                    transition={{ type: "spring", stiffness: 380, damping: 30 }}
+                  />
+                )}
                 <button
                   type="button"
                   onClick={() => setServicesOpen((v) => !v)}
                   aria-expanded={servicesOpen}
                   aria-haspopup="true"
-                  className={`flex items-center gap-1 rounded-full px-2.5 xl:px-3.5 py-2 text-xs xl:text-sm font-medium transition duration-200 ${
-                    isActive || servicesOpen
-                      ? "bg-rose-50/90 text-rose-700 font-bold shadow-sm border border-rose-200/60"
-                      : "text-slate-700 hover:bg-white/70 hover:text-rose-600"
+                  className={`relative z-10 flex items-center gap-1 rounded-full px-3.5 xl:px-4 py-1.5 xl:py-2 text-xs xl:text-sm font-bold transition-colors duration-200 ${
+                    isRouteActive
+                      ? "text-white font-bold"
+                      : servicesOpen
+                      ? "bg-rose-100 text-rose-700 font-bold ring-1 ring-rose-300/80"
+                      : "text-slate-800 hover:text-rose-600 hover:bg-rose-50"
                   }`}
                 >
                   <span>{link.label}</span>
                   <ChevronDown
                     size={14}
                     className={`transition-transform duration-200 ${
-                      servicesOpen ? "rotate-180" : ""
+                      servicesOpen
+                        ? isRouteActive
+                          ? "rotate-180 text-white"
+                          : "rotate-180 text-rose-600"
+                        : isRouteActive
+                        ? "text-white"
+                        : "text-slate-400 group-hover:text-rose-500"
                     }`}
                   />
                 </button>
 
                 {servicesOpen && (
-                  <div className="absolute left-1/2 -translate-x-1/2 top-full mt-2 w-72 overflow-hidden rounded-2xl border border-white/70 bg-white/80 p-2 shadow-2xl backdrop-blur-2xl backdrop-saturate-200 ring-1 ring-black/5 animate-fade-up">
+                  <div
+                    className="absolute left-1/2 -translate-x-1/2 top-full mt-3 w-80 overflow-hidden rounded-2xl border-2 border-rose-200/90 bg-white p-2.5 shadow-[0_20px_50px_-10px_rgba(15,23,42,0.25),0_10px_25px_-5px_rgba(225,29,72,0.15)] ring-1 ring-slate-900/10 z-50 animate-fade-up"
+                    style={{ backgroundColor: "#FFFFFF" }}
+                  >
                     <Link
                       href="/services"
-                      className="flex items-center justify-between rounded-xl px-3.5 py-2.5 text-sm font-bold text-rose-600 transition hover:bg-rose-50/80"
+                      className="flex items-center justify-between rounded-xl px-3.5 py-2.5 text-sm font-bold text-rose-600 transition bg-rose-50/80 hover:bg-rose-100"
                     >
                       <span>
                         {t(nav.services, lang)} —{" "}
@@ -115,31 +137,41 @@ export default function Header() {
                       </span>
                       <ArrowRight size={14} />
                     </Link>
-                    <div className="my-1 h-px bg-slate-200/50" />
-                    {nav.servicesDropdown.map((item) => (
-                      <Link
-                        key={item.href}
-                        href={item.href}
-                        className="block rounded-xl px-3.5 py-2 text-sm font-medium text-slate-700 transition hover:bg-white/90 hover:text-rose-700"
-                      >
-                        {t(item.label, lang)}
-                      </Link>
-                    ))}
+                    <div className="my-1.5 h-px bg-slate-200/80" />
+                    <div className="space-y-0.5">
+                      {nav.servicesDropdown.map((item) => (
+                        <Link
+                          key={item.href}
+                          href={item.href}
+                          className="block rounded-xl px-3.5 py-2 text-sm font-bold text-slate-800 transition hover:bg-rose-50 hover:text-rose-600"
+                        >
+                          {t(item.label, lang)}
+                        </Link>
+                      ))}
+                    </div>
                   </div>
                 )}
               </div>
             ) : (
-              <Link
-                key={link.href}
-                href={link.href}
-                className={`rounded-full px-2.5 xl:px-3.5 py-2 text-xs xl:text-sm font-medium transition duration-200 ${
-                  isActive
-                    ? "bg-rose-50/90 text-rose-700 font-bold shadow-sm border border-rose-200/60"
-                    : "text-slate-700 hover:bg-white/70 hover:text-rose-600"
-                }`}
-              >
-                {link.label}
-              </Link>
+              <div key={link.href} className="relative">
+                {isRouteActive && (
+                  <motion.div
+                    layoutId="navbar-active-pill"
+                    className="absolute inset-0 rounded-full bg-gradient-to-r from-rose-600 via-rose-600 to-rose-500 shadow-[0_2px_12px_rgba(225,29,72,0.36)] ring-1 ring-white/30"
+                    transition={{ type: "spring", stiffness: 380, damping: 30 }}
+                  />
+                )}
+                <Link
+                  href={link.href}
+                  className={`relative z-10 block rounded-full px-3.5 xl:px-4 py-1.5 xl:py-2 text-xs xl:text-sm font-bold transition-colors duration-200 ${
+                    isRouteActive
+                      ? "text-white font-bold"
+                      : "text-slate-800 hover:text-rose-600 hover:bg-rose-50"
+                  }`}
+                >
+                  {link.label}
+                </Link>
+              </div>
             );
           })}
         </nav>
@@ -151,7 +183,7 @@ export default function Header() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Heart2Home on Facebook"
-            className="hidden h-9 w-9 items-center justify-center rounded-full border border-white/70 bg-white/60 text-slate-700 shadow-sm backdrop-blur-md transition hover:bg-white hover:text-rose-600 xl:flex"
+            className="hidden h-9 w-9 items-center justify-center rounded-full border border-rose-200/80 bg-white/90 text-slate-700 shadow-sm backdrop-blur-md transition hover:border-rose-400 hover:bg-rose-50 hover:text-rose-600 xl:flex"
           >
             <Facebook size={15} />
           </a>
@@ -159,7 +191,7 @@ export default function Header() {
           <button
             type="button"
             onClick={toggleLang}
-            className="flex min-h-[38px] sm:min-h-[40px] items-center justify-center rounded-full border border-white/70 bg-white/60 px-3 py-1.5 text-xs font-bold tracking-wide text-slate-800 shadow-sm backdrop-blur-md transition active:scale-95 hover:bg-white hover:text-rose-600 sm:px-3.5 sm:text-sm shrink-0"
+            className="flex min-h-[38px] sm:min-h-[40px] items-center justify-center rounded-full border border-rose-200/80 bg-white/90 px-3 py-1.5 text-xs font-bold tracking-wide text-slate-800 shadow-sm backdrop-blur-md transition active:scale-95 hover:border-rose-400 hover:bg-rose-50 hover:text-rose-600 sm:px-3.5 sm:text-sm shrink-0"
             aria-label="Toggle language"
           >
             {lang === "en" ? "বাংলা" : "English"}

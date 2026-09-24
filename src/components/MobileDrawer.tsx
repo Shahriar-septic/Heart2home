@@ -167,12 +167,12 @@ export default function MobileDrawer({
                     onClick={onClose}
                     className={`flex min-h-[46px] items-center justify-between rounded-2xl px-4 text-sm sm:text-base font-bold transition active:scale-[0.99] ${
                       isActive
-                        ? "border border-rose-300 bg-rose-50 text-rose-700 shadow-sm"
+                        ? "border border-rose-500/80 bg-gradient-to-r from-rose-600 to-rose-500 text-white shadow-md shadow-rose-500/25 ring-1 ring-white/30"
                         : "border border-slate-200 bg-slate-50/80 text-slate-800 shadow-sm hover:bg-slate-100 hover:text-rose-600"
                     }`}
                   >
                     <span>{link.label}</span>
-                    <ChevronRight size={15} className={isActive ? "text-rose-600" : "text-slate-400"} />
+                    <ChevronRight size={15} className={isActive ? "text-white" : "text-slate-400"} />
                   </Link>
                 );
               })}
@@ -188,11 +188,11 @@ export default function MobileDrawer({
                       onClick={onClose}
                       className={`flex min-h-[40px] items-center gap-2 rounded-xl pl-3 pr-3 text-xs sm:text-sm font-semibold transition active:bg-slate-200 ${
                         isActive
-                          ? "border-l-3 border-rose-600 bg-rose-50 text-rose-700 font-bold shadow-sm"
+                          ? "border-l-4 border-rose-600 bg-rose-100/90 text-rose-800 font-bold shadow-sm"
                           : "border-l-2 border-rose-400/80 bg-slate-50 text-slate-700 hover:text-rose-600"
                       }`}
                     >
-                      <ChevronRight size={13} className="shrink-0 text-rose-500" />
+                      <ChevronRight size={13} className={`shrink-0 ${isActive ? "text-rose-700" : "text-rose-500"}`} />
                       <span>{link.label}</span>
                     </Link>
                   );
@@ -212,12 +212,12 @@ export default function MobileDrawer({
                     onClick={onClose}
                     className={`flex min-h-[46px] items-center justify-between rounded-2xl px-4 text-sm sm:text-base font-bold transition active:scale-[0.99] ${
                       isActive
-                        ? "border border-rose-300 bg-rose-50 text-rose-700 shadow-sm"
+                        ? "border border-rose-500/80 bg-gradient-to-r from-rose-600 to-rose-500 text-white shadow-md shadow-rose-500/25 ring-1 ring-white/30"
                         : "border border-slate-200 bg-slate-50/80 text-slate-800 shadow-sm hover:bg-slate-100 hover:text-rose-600"
                     }`}
                   >
                     <span>{link.label}</span>
-                    <ChevronRight size={15} className={isActive ? "text-rose-600" : "text-slate-400"} />
+                    <ChevronRight size={15} className={isActive ? "text-white" : "text-slate-400"} />
                   </Link>
                 );
               })}
